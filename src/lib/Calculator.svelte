@@ -64,6 +64,7 @@
 </section>
 
 <style lang="sass">
+    $pad: 5px
     input[type="number"]
         color: unset
         background: unset
@@ -79,18 +80,22 @@
     label
         font-size: unset
         text-align: center
+        padding: $pad
     #goal, .wrap
         flex: 1
     #result
         display: flex
-        font-size: 2rem
+        font-size: 4rem
         gap: 1em
-    $border: 6px solid var(--theme)
+    @mixin border()
+        border: $pad solid var(--theme)
+    .radio
+        +border()
     div, span
         &:not(.unknown) > label
-            border: $border
+            //box-shadow: $box
             &.selected
                 background: var(--theme)
-    .unknown
-        border: $border
+    //.unknown
+    //    box-shadow: $box
 </style>
