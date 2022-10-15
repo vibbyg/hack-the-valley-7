@@ -53,12 +53,20 @@
         </div>
         <div id="banners">
             {#each banners as banner,i}
+                {#if i === 0}
+                {#if i === selected}
+                    <div class="sexy banner" in:flyIn|local out:flyOut|local
+                        on:click="{showInfo}"
+                    ></div>
+                {/if}
+                {:else}
                 {#if i === selected}
                     <div class="banner" in:flyIn|local out:flyOut|local
                         on:click="{showInfo}"
                     >
                         {banner}
                     </div>
+                {/if}
                 {/if}
             {/each}
         </div>
@@ -96,7 +104,12 @@
         left: calc(50% - 10em)
         top: calc(50% - 10em)
         background-image: url("assets/dummy.png")
+        background-size: 100% 100%
+        background-repeat: no-repeat
         cursor: pointer
+    .sexy
+        background-image: url("assets/Limited_Event_banner.gif")
+        background-size: 100%
     #middle
         flex: 20
         display: flex
