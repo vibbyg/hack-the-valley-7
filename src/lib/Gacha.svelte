@@ -12,7 +12,7 @@
 		selected = (selected + num + banners.length) % banners.length;
 	}
 </script>
-<main class="{$$props.class}">
+<section class="{$$props.class}">
     <div id="middle">
         <div class="left material-icons-round" on:click="{() => change(-1)}"
              title="Previous Banner">
@@ -36,17 +36,18 @@
         <div on:click={() => alert('Summon')}>Summon</div>
         <div on:click={() => alert('Summon x10')}>Summon x10</div>
     </div>
-</main>
+</section>
 
 <style lang="sass">
     @use 'sass:color'
     :global(body)
         height: 100vh
-    main
-        display: flex
-        flex-direction: column
-        width: 100%
+    :global(main)
         height: 100%
+    section
+        display: flex
+        flex: 1
+        flex-direction: column
     .banner
         width: 10em
         height: 10em
@@ -59,6 +60,8 @@
         display: flex
         justify-content: center
         align-items: center
+    #middle
+        position: relative
     .left, .right
         position: absolute
         color: var(--theme)
@@ -68,15 +71,15 @@
         align-items: center
         cursor: pointer
     .left
-        left: 0
+        left: 10px
     .right
-        right: 0
+        right: 10px
     #summon
-        flex: 4
         display: flex
         justify-content: center
         align-items: center
         background: var(--theme)
+        padding: 1em
         & > div
             white-space: nowrap
             margin: 0 5em

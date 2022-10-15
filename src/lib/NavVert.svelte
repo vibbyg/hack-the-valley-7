@@ -31,7 +31,7 @@
         display: flex
         flex-direction: column
         align-items: center
-        background: var(--theme)
+        background: var(--theme-nav)
     img
         width: 3em
 </style>
