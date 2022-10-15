@@ -1,10 +1,11 @@
 <script lang="ts">
-	import Home from './lib/Home.svelte';
+	import Home from './lib/Main.svelte';
 	import { storage } from './lib/stores';
 	import { Option } from './lib/storage';
 
 	$: gain = $storage.option === Option.GainWeight;
 	$: lose = $storage.option === Option.LoseFat;
+
 </script>
 
 {#if $storage.option === Option.None}

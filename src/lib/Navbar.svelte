@@ -1,24 +1,34 @@
 <script lang="ts">
 	import { storage } from './stores';
 
-	let title = 'Tit';
+	export let selected: string;
+	function click({ target: { title } }: { target: HTMLElement }){
+		console.debug('click on', title);
+		selected = title;
+	}
 </script>
 
 <nav style="background: url('assets/banner_{$storage.option}.png')">
-    <div id="spacer1"></div>
-    <div id="currency">{$storage.concurrency}</div>
-    <div id="title">{title}</div>
-    <div id="spacer2"></div>
+    <div class="material-icons-round" title="Home" on:click={click}>home</div>
+    <div id="currency">{$storage.concurrency} pts</div>
+    <div id="title">{selected}</div>
+    <div class="material-icons-round" title="Gacha" on:click={click}>cached
+    </div>
 </nav>
 
 <style lang="sass">
     @use '../vars' as *
     nav
         display: flex
-        background-color: var(--theme)
+        justify-content: center
+        align-items: center
 
-    #spacer1
+    .material-icons-round
         flex: 1
+        font-size: 2em
+        display: flex
+        justify-content: center
+        align-items: center
 
     #currency
         background-color: $background
@@ -31,10 +41,7 @@
 
     #title
         text-align: center
-        margin: 10px 100px
+        margin: 10px
         padding: 10px
         flex: 7
-
-    #spacer2
-        flex: 3
 </style>
