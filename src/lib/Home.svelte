@@ -2,7 +2,6 @@
 
 	import { storage } from './stores';
 	import Recipe from './Recipe.svelte';
-	import Collected from './Collected.svelte';
 </script>
 
 <section>
