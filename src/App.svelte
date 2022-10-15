@@ -7,7 +7,6 @@
     $: lose = $storage.option === Option.LoseFat;
 
     $: localStorage.setItem(key, JSON.stringify($storage));
-    $: console.log($storage.option)
 </script>
 
 {#if $storage.option === Option.None}
@@ -43,6 +42,10 @@
         div
             width: 100%
             height: 50%
+    #gain, #lose
+        &:hover
+            width: 75%
+        transition: width 250ms
     #gain
         background: $gain
     #lose
