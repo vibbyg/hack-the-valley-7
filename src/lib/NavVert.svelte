@@ -45,7 +45,7 @@
         right: 0
         height: $nav
     #toggle
-        &.hide
+        &:not(.hide)
             transform: rotate(180deg)
         transition: transform 500ms
 
