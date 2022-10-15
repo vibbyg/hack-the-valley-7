@@ -1,16 +1,16 @@
 <script lang="ts">
-    import { fly } from 'svelte/transition';
-    import { sineInOut as ease } from 'svelte/easing';
+	import { fly } from 'svelte/transition';
+	import { sineInOut as ease } from 'svelte/easing';
 
-    const max = 100;
-    let banners = Array.from(Array(max), (_, i) => `Banner ${i + 1}`);
-    let selected = (max / 2 | 0) - 1;
-    let x = 0;
+	const max = 100;
+	let banners = Array.from(Array(max), (_, i) => `Banner ${i + 1}`);
+	let selected = (max / 2 | 0) - 1;
+	let x = 0;
 
-    function change(num: number): void{
-        x = 100 * num;
-        selected = (selected + num + banners.length) % banners.length;
-    }
+	function change(num: number): void{
+		x = 100 * num;
+		selected = (selected + num + banners.length) % banners.length;
+	}
 </script>
 <section class="{$$props.class}">
     <style>
