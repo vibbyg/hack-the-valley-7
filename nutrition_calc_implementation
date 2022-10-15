@@ -1,0 +1,71 @@
+//Depending on the status of the user; Gain Weight -> gain == true; Lose Fat -> gain == false
+//Depending on the status of the user; Male -> is_female == false; Female -> is_female == true
+
+//Enter your current weight: [float weight = user input here]
+
+//Add a Metric/Imperial selector here that is a boolean; metric --> metric == true; imperial --> metric == false;
+
+float imp_multi = 2.20462
+
+int bonus
+
+if(gain == true)
+{bonus = 500}
+
+else
+{bonus = -500}
+
+if(is_female == true)
+{
+float multiplier = 0.80
+}
+
+else
+{float multiplier = 1.00}
+
+if(metric == true)
+{
+    float maintainence = weight*imp_multi*15*multiplier
+    
+    //Recommended daily caloric intake:
+    return maintainence + bonus
+
+    //Recommended daily intake for the following macrosnutrients are:
+    
+    //Protein: 
+    return weight*imp_multi*0.8*multiplier
+    
+    //Carbohydrates:
+    return ((maintainence + bonus)/2000)*35
+    
+    //Fats:
+    
+    return ((maintainence + bonus)/2000)*62
+    
+    //Fibre:
+    return ((maintainence + bonus)/2000)*32
+}
+
+else
+{
+
+   float maintainence = weight*15*multiplier
+    
+    //Recommended daily caloric intake:
+    return maintainence + bonus
+
+    //Recommended daily intake for the following macrosnutrients are:
+    
+    //Protein: 
+    return weight*0.8*multiplier
+    
+    //Carbohydrates:
+    return ((maintainence + bonus)/2000)*35
+    
+    //Fats:
+    
+    return ((maintainence + bonus)/2000)*62
+    
+    //Fibre:
+    return ((maintainence + bonus)/2000)*32
+}
