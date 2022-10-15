@@ -8,6 +8,7 @@
 	function click({ target: { title } }: { target: HTMLElement }){
 		console.debug('click on', title);
 		selected = title;
+		hide = true;
 	}
 
 	// const titles = {
@@ -19,10 +20,10 @@
 	const pages = [
 		{
 			src: 'assets/collection.png', title: 'Collection',
-        },{
-		    src: 'assets/gacha.png', title: 'Gacha',
-        }
-    ]
+		}, {
+			src: 'assets/gacha.png', title: 'Gacha',
+		}
+	];
 </script>
 
 <svelte:head>
@@ -35,7 +36,7 @@
 </span>
 {#if !hide}
     <nav transition:slide>
-        {#each pages as {src,title}}
+        {#each pages as { src, title }}
             <img {src} alt="{title}" {title} on:click={click}>
         {/each}
     </nav>
