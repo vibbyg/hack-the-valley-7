@@ -1,15 +1,19 @@
 <script lang="ts">
 	import Gacha from './Gacha.svelte';
-	import { storage } from './stores';
 	import Collected from './Collected.svelte';
 	import Recipe from './Recipe.svelte';
+	import Navbar from './Navbar.svelte';
+	import { storage } from './stores';
 </script>
 
 <main class="{$storage.option}">
     <section id="left">
-        {#each $storage.recipes as recipe}
-            <Recipe {recipe}/>
-        {/each}
+        <Navbar/>
+        <div id="recipes">
+            {#each $storage.recipes as recipe}
+                <Recipe {recipe}/>
+            {/each}
+        </div>
     </section>
     <section id="right">
         <Gacha/>
@@ -25,11 +29,12 @@
         display: flex
         border: 1px solid var(--theme)
         flex-direction: column
-        &#right
-            flex: 1
-        &#left
-            flex: 3
-            display: grid
-            gap: 1em
-            grid-template-columns: 1fr 1fr 1fr
+    #right
+        flex: 1
+    #left
+        flex: 3
+    #recipes
+        display: grid
+        gap: 1em
+        grid-template-columns: 1fr 1fr 1fr
 </style>

@@ -4,17 +4,6 @@
     <div id="title">{title}</div>
     <div id="spacer2"></div>
     <div id="gacha">Gacha</div>
-    <!-- <ul>
-        <li>
-            <a>A</a>
-        </li>
-        <li>
-            <a>B</a>
-        </li>
-        <li>
-            <a>C</a>
-        </li>
-    </ul> -->
 </nav>
 
 <style>
