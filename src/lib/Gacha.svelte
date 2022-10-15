@@ -13,6 +13,11 @@
 	}
 </script>
 <section class="{$$props.class}">
+    <style>
+        body{
+            height: 100vh
+        }
+    </style>
     <div id="middle">
         <div class="left material-icons-round" on:click="{() => change(-1)}"
              title="Previous Banner">
@@ -40,8 +45,6 @@
 
 <style lang="sass">
     @use 'sass:color'
-    :global(body)
-        height: 100vh
     :global(main)
         height: 100%
     section
