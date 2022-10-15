@@ -9,11 +9,6 @@
         hide = true;
     }
 
-    // const titles = {
-    //     [Option.LoseFat]: 'Lose Fat',
-    //     [Option.GainWeight]: 'Gain Weight',
-    // };
-    // $: title = selected == 'Home' ? titles[$storage.option] : selected;
     let hide = true;
     const pages = [
         { src: 'assets/gacha.png', title: 'Gacha' },
