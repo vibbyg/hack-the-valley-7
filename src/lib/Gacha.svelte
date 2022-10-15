@@ -2,14 +2,12 @@
 	import { fly } from 'svelte/transition';
 	import { sineInOut as ease } from 'svelte/easing';
 
-	let banners = ['banana', 'nanab', 'ananas'];
+	let banners = Array.from(Array(100), (_, i) => `Banner ${i + 1}`);
 	let selected = 0;
-	let tr = {
-		x: 0, y: 0, ease
-	};
+	let x = 0;
 
 	function bannerChange(num: number): void{
-		tr.x = 100 * num;
+		x = 100 * num;
 		selected = (selected + num + banners.length) % banners.length;
 	}
 </script>
@@ -22,7 +20,10 @@
         <div id="banners">
             {#each banners as b,i}
                 {#if i === selected}
-                    <span class="banner" transition:fly={tr}>{b}</span>
+                    <span class="banner"
+                          in:fly|local={{x,y:0,ease}}
+                          out:fly|local={{x:-x,y:0,ease}}
+                    >{b}</span>
                 {/if}
             {/each}
         </div>
