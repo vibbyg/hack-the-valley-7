@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Gacha from './Gacha.svelte';
 	import { storage } from './stores';
-	import Collected from './Recipes.svelte';
+	import Collected from './Collected.svelte';
 </script>
 
 <main class="{$storage.option}">
