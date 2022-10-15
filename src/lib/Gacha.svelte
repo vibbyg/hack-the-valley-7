@@ -1,23 +1,30 @@
 <script lang="ts">
-	import Banner from './Banner.svelte';
+	import { fly } from 'svelte/transition';
+	import { sineInOut as ease } from 'svelte/easing';
 
-	const banners = ['banana', 'nanab', 'ananas'];
-	let focusedBanner = 0;
+	let banners = ['banana', 'nanab', 'ananas'];
+	let selected = 0;
+	let tr = {
+		x: 0, y: 0, ease
+	};
 
 	function bannerChange(num: number): void{
-		focusedBanner = (focusedBanner + num + banners.length) % banners.length;
+		tr.x = 100 * num;
+		selected = (selected + num + banners.length) % banners.length;
 	}
 </script>
 <main class="{$$props.class}">
-    <div id="banners">
+    <div id="middle">
         <div class="banner-nav material-icons-round"
              on:click="{() => bannerChange(-1)}">
             navigate_before
         </div>
-        <div id="banner-mid">
-            <div class="banner">
-                <Banner text="{banners[focusedBanner]}"/>
-            </div>
+        <div id="banners">
+            {#each banners as b,i}
+                {#if i === selected}
+                    <span class="banner" transition:fly={tr}>{b}</span>
+                {/if}
+            {/each}
         </div>
         <div class="banner-nav material-icons-round"
              on:click="{() => bannerChange(1)}">
@@ -39,17 +46,22 @@
         flex-direction: column
         width: 100%
         height: 100%
-    #banner-mid
-        flex: 1
+    .banner
+        width: 10em
+        height: 10em
+        background: var(--theme)
         display: flex
         justify-content: center
         align-items: center
-    #banners
+    #banners, #middle
         flex: 20
         display: flex
+        justify-content: center
+        align-items: center
 
     .banner-nav
         color: var(--theme)
+        flex: 1
         font-size: 8em
         display: flex
         justify-content: center
