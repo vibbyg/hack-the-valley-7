@@ -1,13 +1,13 @@
 <script lang="ts">
-	import Main from './lib/Main.svelte';
-	import { key, storage } from './lib/stores';
-	import { Option } from './lib/storage';
+    import Main from './lib/Main.svelte';
+    import { key, storage } from './lib/stores';
+    import { Option } from './lib/storage';
 
-	$: gain = $storage.option === Option.GainWeight;
-	$: lose = $storage.option === Option.LoseFat;
+    $: gain = $storage.option === Option.GainWeight;
+    $: lose = $storage.option === Option.LoseFat;
 
-	$: localStorage.setItem(key, JSON.stringify($storage));
-	$: console.log($storage.option)
+    $: localStorage.setItem(key, JSON.stringify($storage));
+    $: console.log($storage.option)
 </script>
 
 {#if $storage.option === Option.None}

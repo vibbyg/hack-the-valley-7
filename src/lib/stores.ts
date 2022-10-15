@@ -5,8 +5,8 @@ import { init } from './init';
 export const key = 'fit';
 /// read from localStorage or use init
 const local = ((s: Storage) => ({
-	// ...s, ...JSON.parse(localStorage.getItem(key) || '{}')
-	...s, option: JSON.parse(localStorage.getItem(key) || '{}').option
+    // ...s, ...JSON.parse(localStorage.getItem(key) || '{}')
+    ...s, option: JSON.parse(localStorage.getItem(key) || '{}').option
 }))(init) as Storage;
 
 export const storage = writable<Storage>(local);
