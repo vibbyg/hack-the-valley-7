@@ -7,6 +7,7 @@
 	$: lose = $storage.option === Option.LoseFat;
 
 	$: localStorage.setItem(key, JSON.stringify($storage));
+	$: console.log($storage.option)
 </script>
 
 {#if $storage.option === Option.None}

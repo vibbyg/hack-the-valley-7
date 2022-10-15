@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { storage } from './stores';
+	import { Option } from './storage';
 
 	export let title = 'Untitled';
 
