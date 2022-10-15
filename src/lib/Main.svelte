@@ -2,7 +2,7 @@
 	import Gacha from './Gacha.svelte';
 	import Collection from './Collection.svelte';
 	import NavVert from './NavVert.svelte';
-	import { key, storage } from './stores';
+	import { storage } from './stores';
 	import NavHori from './NavHori.svelte';
 
 	let selected = 'Collection';

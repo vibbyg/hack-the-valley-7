@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
-	import { sineInOut as ease } from 'svelte/easing';
+    import { sineInOut as ease } from 'svelte/easing';
 
 	const max = 100;
 	let banners = Array.from(Array(max), (_, i) => `Banner ${i + 1}`);
@@ -8,9 +8,17 @@
 	let x = 0;
 
 	function change(num: number): void{
-		x = 100 * num;
+		x = 500 * num;
 		selected = (selected + num + banners.length) % banners.length;
 	}
+
+    function flyIn(node) {
+        return fly(node, {x, y: 10, easing: ease});
+    }
+
+    function flyOut(node) {
+        return fly(node, {x: -x, y: 10, easing: ease});
+    }
 </script>
 <section class="{$$props.class}">
     <style>
@@ -26,9 +34,9 @@
         <div id="banners">
             {#each banners as banner,i}
                 {#if i === selected}
-                    <span class="banner" transition:fly|local={{x,y:0,ease}}>
+                    <div class="banner" in:flyIn|local out:flyOut|local>
                         {banner}
-                    </span>
+                    </div>
                 {/if}
             {/each}
         </div>
@@ -51,19 +59,23 @@
         display: flex
         flex: 1
         flex-direction: column
+    /*#banners
+        position: relative*/
     .banner
-        width: 10em
-        height: 10em
+        width: 15em
+        height: 15em
         background: var(--theme)
         display: flex
         justify-content: center
         align-items: center
-    #banners, #middle
+        position: absolute
+        left: calc(50% - 7.5em)
+        top: calc(50% - 7.5em)
+    #middle
         flex: 20
         display: flex
         justify-content: center
         align-items: center
-    #middle
         position: relative
     .left, .right
         position: absolute
