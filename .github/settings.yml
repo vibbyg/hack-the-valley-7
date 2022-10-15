@@ -1,0 +1,21 @@
+ 
+labels:
+  - name: fix
+    color: ff6680
+    description: What used to not work now works
+
+  - name: feat
+    color: 39c5bb
+    description: Implement or request a new feature
+
+  - name: refactor
+    color: ffe666
+    description: Code is now less spaghetti
+
+  - name: doc
+    color: 66ccff
+    description: For programmer with short memory (i.e. me)
+
+  - name: chore
+    color: ff9966
+    description: Update grunt tasks
