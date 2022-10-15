@@ -90,7 +90,7 @@
         #summon > div
             margin: 0 1em
         .left, .right
-            bottom: 0
+            bottom: 5%
         .left
             left: 0
         .right
