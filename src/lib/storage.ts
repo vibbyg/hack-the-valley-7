@@ -17,5 +17,6 @@ export interface Storage{
 	/// unlocked recipies
 	collected: string[];
 	/// available recipes
-	recipes: Recipe[]
+	recipes: Recipe[];
+	concurrency: number;
 }

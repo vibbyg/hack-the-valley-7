@@ -11,4 +11,5 @@ export const init = {
 	option: Option.None,
 	collected: ['Bubble Tea'],
 	recipes,
+	concurrency: 420,
 } as Storage;

@@ -1,11 +1,11 @@
 <script lang="ts">
-	let currency = 420;
+	import { storage } from './stores';
 	let title = 'Tit';
 </script>
 
 <nav>
     <div id="spacer1"></div>
-    <div id="currency">{currency}</div>
+    <div id="currency">{$storage.concurrency}</div>
     <div id="title">{title}</div>
     <div id="spacer2"></div>
 </nav>
