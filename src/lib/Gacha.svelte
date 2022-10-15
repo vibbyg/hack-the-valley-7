@@ -21,7 +21,7 @@
         <div id="banners">
             {#each banners as banner,i}
                 {#if i === selected}
-                    <span class="banner" transition:fly={{x,y:0,ease}}>
+                    <span class="banner" transition:fly|local={{x,y:0,ease}}>
                         {banner}
                     </span>
                 {/if}
