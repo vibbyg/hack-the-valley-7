@@ -1,23 +1,19 @@
 import type { Recipe, Storage } from './storage';
-import { Option } from './storage';
-
-const foods = [
-	'lunch_dining', 'local_bar', 'local_pizza',
-	'ramen_dining', 'bakery_dining', 'dinner_dining',
-	'icecream', 'coffee', 'wine_bar', 'water_drop',
-];
+import { Option, Type } from './storage';
 
 const recipes = Array.from(Array(10), (_, i) => i + 1).map(i => ({
 	name: `Dish ${i}`,
-	ingredients: Array.from(Array(1 + (Math.random() * 4) | 0), (_, i) => i).map(
-		i => `Ingredient ${i}`
-	),
-	// photo: foods[Math.random() * foods.length | 0],
-	photo: foods[i - 1]
+	calories: Math.random() * 300 | 0,
+	type: Object.values(Type)[Math.random() * 3 | 0],
+	nutrients: 'abcde'.split('').map(name => ({
+		name,
+		value: Math.random() * 50 | 0,
+		unit: ['g', 'mg', 'kg'][Math.random() * 3 | 0]
+	}))
 })) as Recipe[];
 /// default settings
 export const init = {
 	option: Option.None,
-	recipes,
+	collection: recipes,
 	concurrency: 420,
 } as Storage;

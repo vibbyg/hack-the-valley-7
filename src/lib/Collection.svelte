@@ -3,13 +3,11 @@
 </script>
 
 <section>
-    {#each $storage.recipes as { ingredients }}
+    {#each $storage.collection as {name, calories, nutrients, type, src}}
         <div>
-            <ul>
-                {#each ingredients as i}
-                    <li>{i}</li>
-                {/each}
-            </ul>
+            <span>{name}</span>
+            <span>{calories} Calories</span>
+            <img src="{type}" alt="">
         </div>
     {/each}
 </section>
@@ -28,11 +26,7 @@
     div
         background: var(--card) no-repeat
         display: flex
-        justify-content: center
-        &:hover
-            color: var(--theme)
-            border-color: var(--theme)
-        transition: color $dur, border-color $dur
+        flex-direction: column
         width: $width
         height: $width / 3 * 4
 </style>
