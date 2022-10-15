@@ -39,6 +39,7 @@
         justify-content: center
         align-items: center
         background-size: cover
+        padding: 0.2em
 
     .material-icons-round
         flex: 1
@@ -53,13 +54,12 @@
         color: var(--theme)
         text-align: center
         border-radius: 10px
-        margin: 10px
-        padding: 10px
         flex: 2
+        white-space: nowrap
+        padding: 0.5em
+        margin-left: 0.5em
 
     #title
         text-align: center
-        margin: 10px
-        padding: 10px
         flex: 7
 </style>

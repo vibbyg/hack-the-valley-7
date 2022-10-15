@@ -2,33 +2,31 @@
 	import { fly } from 'svelte/transition';
 	import { sineInOut as ease } from 'svelte/easing';
 
-	let banners = Array.from(Array(100), (_, i) => `Banner ${i + 1}`);
-	let selected = 0;
+	const max = 100;
+	let banners = Array.from(Array(max), (_, i) => `Banner ${i + 1}`);
+	let selected = (max / 2 | 0) - 1;
 	let x = 0;
 
-	function bannerChange(num: number): void{
+	function change(num: number): void{
 		x = 100 * num;
 		selected = (selected + num + banners.length) % banners.length;
 	}
 </script>
 <main class="{$$props.class}">
     <div id="middle">
-        <div class="banner-nav material-icons-round"
-             on:click="{() => bannerChange(-1)}">
+        <div class="left material-icons-round" on:click="{() => change(-1)}">
             navigate_before
         </div>
         <div id="banners">
-            {#each banners as b,i}
+            {#each banners as banner,i}
                 {#if i === selected}
-                    <span class="banner"
-                          in:fly|local={{x,y:0,ease}}
-                          out:fly|local={{x:-x,y:0,ease}}
-                    >{b}</span>
+                    <span class="banner" transition:fly={{x,y:0,ease}}>
+                        {banner}
+                    </span>
                 {/if}
             {/each}
         </div>
-        <div class="banner-nav material-icons-round"
-             on:click="{() => bannerChange(1)}">
+        <div class="right material-icons-round" on:click="{() => change(1)}">
             navigate_next
         </div>
     </div>
@@ -59,29 +57,40 @@
         display: flex
         justify-content: center
         align-items: center
-
-    .banner-nav
+    .left, .right
+        position: absolute
         color: var(--theme)
-        flex: 1
         font-size: 8em
         display: flex
         justify-content: center
         align-items: center
         cursor: pointer
-
+    .left
+        left: 0
+    .right
+        right: 0
     #summon
-        flex: 5
+        flex: 4
         display: flex
         justify-content: center
         align-items: center
         background: var(--theme)
         & > div
+            white-space: nowrap
             margin: 0 5em
             background-color: var(--theme)
             filter: brightness(200%)
             color: black
-            padding: 30px
+            padding: 1em
             border-radius: 10px
             cursor: pointer
-
+    @media(orientation: portrait)
+        #summon > div
+            margin: 0 1em
+        .left, .right
+            bottom: 0
+        .left
+            left: 0
+        .right
+            right: 0
 </style>

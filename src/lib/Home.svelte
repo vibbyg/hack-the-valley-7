@@ -26,4 +26,9 @@
         display: grid
         gap: 1em
         grid-template-columns: 1fr 1fr 1fr
+    @media (orientation: portrait)
+        #left
+            grid-template-columns: 1fr
+        #right
+            display: none
 </style>
