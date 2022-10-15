@@ -1,84 +1,96 @@
-name,servings,calories,nutrient_name,nutient_value,nutrient_unit,type,src,,,ingredient_name,ingredient_value,ingredient_unit,tier,steps
-Protein Pizza,2,953,Saturated Fat,1.1,g,Snack,“/public/assets/recipe_images/1.png”,,,white rice flour,50,g,normal,"Add the flours, water, instant yeast, salt, and olive oil to the bowl"
-,,,Sodium,1952,g,,,,,soy flour ,25,g,,Transfer the dough to a lightly oiled container about 3-4 times the size of the dough.
-,,,Dietary Fiber,8.3,g,,,,,cold water,400,g,,"Divide the dough into 5 equal pieces, 180 grams each. "
-,,,Total Sugars,3,g,,,,,instant yeast,5,g,,Preheat the oven to 500°F about 1 hour into the proofing process.
-,,,Protein,30.2,g,,,,,kosher salt,10,g,,"Once the dough is proofed, gently spread the dough into an oval shape about 11-12 inches long.  "
-,,,Calcium,64,mg,,,,,extra virgin olive oil,10,g,,"Transfer the shaped pinsa into a pizza peel and then, add the toppings of your choice."
-,,,Iron,11,mg,,,,,,,,,Place the pinsa into the preheat oven and bake for 3-6 minutes or until crisp.
-,,,Potassium,601,mg,,,,,,,,,Let the pinsa cool slightly before slicing.
-Exotic Ginger Cumin Chicken ,3,724,Total Fat,28.5,g,Meal,“/public/assets/recipe_images/2.png”,,,"Vegetable Oil, divided",1,tbsp,special,In large saucepan heat 2 tsp oil over medium heat. Add half of the chicken and cook 3 minutes until brown. Remove from pan and set aside. Repeat with remaining chicken.
-,,,Saturated Fat,7.8,g,,,,,"Boneless Skinless Chicken, cut bite-size",2,lbs,,"Add remaining oil to pan; add garlic, onion, and ginger. Reduce heat to medium and cook, stirring constantly for 5 minutes or until soft. Stir in cayenne, cumin, and turmeric; saute for 1 minute."
-,,,Cholesterol 273mg ,273,mg,,,,,"Garlic, minced",2,tsp,,"Stir in stock, tomatoes, tomato paste, and sugar; return chicken to pan. Bring to boil; reduce heat and simmer 5 minutes."
-,,,Sodium,452,mg,,,,,"cup Onion, chopped",0.5,cup,,Stir in yogurt and simmer 2 minutes.
-,,,Total Carbohydrate 18.4g ,18.4,g,,,,,"Ginger Root, minced",1,tbsp,,
-,,,Dietary Fiber,3.4,g,,,,,Cayenne Pepper,0.5,tsp,,
-,,,Total Sugars,12.7,g,,,,,Cumin,1,tsp,,
-,,,Protein,93.7,g,,,,,Turmeric,1,tsp,,
-,,,Vitamin D,0,mg,,,,,Chicken Stock,0.5,cup,,
-,,,Calcium,198,mg,,,,,Stewed Tomatoes,19,oz,,
-,,,Iron,5,mg,,,,,Tomato Paste,2,tbsp,,
-,,,Potassium,1492,mg,,,,,Sugar,1,tsp,,
-,,,,,,,,,,Low Fat Plain Yogurt,0.75,cup,,
-Fried Rice,8,479,Total Fat,7,g,Meal,“/public/assets/recipe_images/3.png”,,,cooked and chilled white rice,4.5,cup,normal,Start by bringing some water to a boil in a pot. 
-,,,Saturated Fat,2.4,g,,,,,Salt,10,g,,Preheat a wide non-stick pan over medium high heat and add some vegetable oil along with 2 beaten eggs. 
-,,,Cholesterol,60,mg,,,,,Vegetable oil,1,tbsp,,"Wipe out pan, add more oil, and then add the shrimp (or the protein of your choice). Once cooked, set aside in the bowl with the eggs."
-,,,Sodium,686,mg,,,,,"eggs, beaten",2,,,Add 2 cloves of crushed garlic and cook for about 30 seconds before adding 4 cups of cooked white rice. 
-,,,Total Carbohydrate,87.9,g,,,,,Shrimp (or protein of your choice),40,g,,Turn the heat to high and let the whole thing saute. Break up any big chunks of rice and cook for about 3-5 minutes.
-,,,Dietary Fiber,2.6,g,,,,,"shiitake mushrooms, chopped",0.5,cup,,Add your eggs and protein back into the mix and top with some sesame oil and thinly sliced scallions. 
-,,,Total Sugars,1.2,g,,,,,frozen peas,0.5,cup,,Reduce the heat to low and add some sesame seeds. Mix to combine.
-,,,Protein,13.6,g,,,,,chopped ham,1,cup,,Finish it off by adding 1 Tbsp of butter and mixing that to combine.
-,,,Vitamin D,5,mcg,,,,,"cloves garlic, crushed",2,,,
-,,,Calcium,60,mg,,,,,oyster sauce,3,tbsp,,
-,,,Iron,5,mg,,,,,soy sauce,3,tbsp,,
-,,,Potassium,237,mg,,,,,butter,1,tbsp,,
-Mexican Meat Loaf ,4,463,Total Fat,8.8,g,Meal,“/public/assets/recipe_images/4.png”,,,Lean Ground Beef,1,lbs,normal,"In bowl, place all ingredients except spray and using 3/4 cup of the salsa - mix well."
-,,,Saturated Fat,3.1,g,,,,,"Black Beans (canned), rinsed and drained",1,cup,,"Spray a loaf pan (approx. 5""x9""), and add above mix."
-,,,Cholesterol,101,mg,,,,,"Salsa, divided",1,cup,,Bake for 50 to 60 minutes - sit 15 minutes.
-,,,Sodium,569,mg,,,,,Corn (frozen),0.5,cup,,Top with last 1/4 cup of salsa.
-,,,Total Carbohydrate,47.7,g,,,,,Bread Crumbs,0.5,cup,,
-,,,Dietary Fiber,9.6,g,,,,,,,,,
-,,,Total Sugars,4.5,g,,,,,,,,,
-,,,Protein,48.3,g,,,,,,,,,
-,,,Vitamin D,0,mcg,,,,,,,,,
-,,,Calcium ,103,mg,,,,,,,,,
-,,,Iron,25,mg,,,,,,,,,
-,,,Potassium,1448,mg,,,,,,,,,
-Ratatouille,12,138,Total Fat,5.2,g,Snack,“/public/assets/recipe_images/5.png”,,,Tomatoes,1.5,lbs,normal,Peel and drain the tomatoes (don’t mind the seeds): cut out the stem cores; drop the whole tomatoes into boiling water for 2 minutes
-,,,Saturated Fat,0.7,g,,,,,Eggplant,0.5,lbs,,"Chop the onion and garlic. Clean the bell pepper, cut into small strips."
-,,,Cholesterol,0,mg,,,,,Zucchini,1,lbs,,"In a large cooking pot with thick bottom, put in olive oil, onions, and chopped garlic. Add in the bell pepper. Cover to keep in the moisture."
-,,,Sodium,60,mg,,,,,Bell Peppers,3,,,"Add the tomatoes and Herbes de Provence. If you don’t have good garden tomatoes with flavour, add a small can of tomato paste. "
-,,,Total Carbohydrate,19.9,g,,,,,Onions,2,lbs,,Cut the eggplant into disks. Cut zucchini into disks.
-,,,Dietary Fiber,7.7,g,,,,,Cloves of Garlic,6,,,Add the eggplant and zucchini to the pot.
-,,,Total Sugars,10.8,g,,,,,"Basil, Thyme, Parsley",,,,Cook for about 30 minutes.
-,,,Protein,5.9,g,,,,,Olive Oil,1,tbsp,,
-,,,Vitamin D,0,mcg,,,,,Salt and pepper,10,g,,
-,,,Calcium,47,mg,,,,,Tomato Paste,140,g,,
-,,,Iron,1,mg,,,,,,,,,
-,,,Potassium ,715,mg,,,,,,,,,
-Devil Fruit Cake,6,614,Total Fat,7.1,g,Snack,“/public/assets/recipe_images/6.png”,,,cake flour ,90,g,special,"Separate 3 eggs for whites, add 90g of sugar."
-,,,Saturated Fat,1.4,g,,,,,egg whites ,90,g,,"Add flour for elegance, 30g milk, 25g sunflower oil, 1/4 tsp green tea extract."
-,,,Cholesterol,105,mg,,,,,granulated sugar,90,g,,Mix in the cake thoroughly.
-,,,Sodium,129,mg,,,,,eggs yolks,3,,,Bake for 35 to 40 min at 150°C degrees
-,,,Total Carbohydrate,132.5,g,,,,,milk ,30,g,,"Trim the cake, and cover with marshmallow fondant."
-,,,Dietary Fiber,0.5,g,,,,,sunflower seed oil,25,g,,
-,,,Total Sugars,77.8,g,,,,,green tea extract,0.25,tsp,,
-,,,Protein,5.8,g,,,,,marshmallow fondant ,800,g,,
-,,,Vitamin D,9,mcg,,,,,purple and green food color,5,g,,
-,,,Calcium,24,mg,,,,,,,,,
-,,,Iron,1,mg,,,,,,,,,
-,,,Potassium,59,mg,,,,,,,,,
-Ukrainian Borscht Soup,10,263,Total Fat,11.9,g,Snack,“/public/assets/recipe_images/7.png”,,,red beetroots,3,,normal,"Peel, grate and/or slice all vegetables (keeping sliced potatoes in cold water to prevent browning until ready to use then drain)."
-,,,Saturated Fat,4.2,g,,,,,extra virgin olive oil,4,tbsp,,Heat a large soup pot (5 1/2 Qt or larger) over medium/high heat and add 2 Tbsp olive oil.
-,,,Cholesterol,10,mg,,,,,chicken broth,8,cups,,"Add grated beets and sauté 10 minutes, stirring occasionally until beets are softened."
-,,,Sodium,695,mg,,,,,water,2,cups,,Add 8 cups broth and 2 cups water.
-,,,Total Carbohydrate,29.8,g,,,,,potatoes,3,,,Add sliced potatoes and sliced carrots then cook for 10-15 minutes or until easily pierced with a fork.
-,,,Dietary Fiber,5.3,g,,,,,carrots,2,,,"While potatoes are cooking, place a large skillet over medium/high heat and add 2 Tbsp oil."
-,,,Total Sugars,5.8,g,,,,,celery ribs,2,,,"Add chopped onion, celery and bell pepper. Saute stirring occasionally until softened and lightly golden (7-8 minutes)."
-,,,Protein,11.4,g,,,,,onion,1,,,Add 4 Tbsp Ketchup and stir fry for 30 seconds then transfer to the soup pot to continue cooking with the potatoes.
-,,,Vitamin D,0,mcg,,,,,tomato sauce,3,tbsp,,"When potatoes and carrots reach desired softness, add optional ingredients from the list."
-,,,Calcium,109,mcg,,,,,red bell pepper,1,,,Simmer for an additional 2-3 minutes and add more spices to taste.
-,,,Iron,3,mg,,,,,white cannelini beans with their juice,1,can,,Serve with a dollop of sour cream on top.
-,,,Potassium,986,mg,,,,,bay leaves,2,,,
-,,,,,,,,,,pressed garlic clove,1,,,
-,,,,,,,,,,sour cream,1,cup,,
+name,servings,calories,nutrient_name,nutient_value,nutrient_unit,type,src,,,ingredient_name,ingredient_value,ingredient_unit,tier,steps,
+Protein Pizza,2,953,Saturated Fat,1.1,g,Snack,“/public/assets/recipe_images/1.png”,,,white rice flour,50,g,normal,"Add the flours, water, instant yeast, salt, and olive oil to the bowl",
+,,,Sodium,1952,g,,,,,soy flour ,25,g,,Transfer the dough to a lightly oiled container about 3-4 times the size of the dough.,
+,,,Dietary Fiber,8.3,g,,,,,cold water,400,g,,"Divide the dough into 5 equal pieces, 180 grams each. ",
+,,,Total Sugars,3,g,,,,,instant yeast,5,g,,Preheat the oven to 500°F about 1 hour into the proofing process.,
+,,,Protein,30.2,g,,,,,kosher salt,10,g,,"Once the dough is proofed, gently spread the dough into an oval shape about 11-12 inches long.  ",
+,,,Calcium,64,mg,,,,,extra virgin olive oil,10,g,,"Transfer the shaped pinsa into a pizza peel and then, add the toppings of your choice.",
+,,,Iron,11,mg,,,,,,,,,Place the pinsa into the preheat oven and bake for 3-6 minutes or until crisp.,
+,,,Potassium,601,mg,,,,,,,,,Let the pinsa cool slightly before slicing.,
+Exotic Ginger Cumin Chicken ,3,724,Total Fat,28.5,g,Meal,“/public/assets/recipe_images/2.png”,,,"Vegetable Oil, divided",1,tbsp,special,In large saucepan heat 2 tsp oil over medium heat. Add half of the chicken and cook 3 minutes until brown. Remove from pan and set aside. Repeat with remaining chicken.,
+,,,Saturated Fat,7.8,g,,,,,"Boneless Skinless Chicken, cut bite-size",2,lbs,,"Add remaining oil to pan; add garlic, onion, and ginger. Reduce heat to medium and cook, stirring constantly for 5 minutes or until soft. Stir in cayenne, cumin, and turmeric; saute for 1 minute.",
+,,,Cholesterol,273,mg,,,,,"Garlic, minced",2,tsp,,"Stir in stock, tomatoes, tomato paste, and sugar; return chicken to pan. Bring to boil; reduce heat and simmer 5 minutes.",
+,,,Sodium,452,mg,,,,,"cup Onion, chopped",0.5,cup,,Stir in yogurt and simmer 2 minutes.,
+,,,Total Carbohydrate,18.4,g,,,,,"Ginger Root, minced",1,tbsp,,,
+,,,Dietary Fiber,3.4,g,,,,,Cayenne Pepper,0.5,tsp,,,
+,,,Total Sugars,12.7,g,,,,,Cumin,1,tsp,,,
+,,,Protein,93.7,g,,,,,Turmeric,1,tsp,,,
+,,,Vitamin D,0,mg,,,,,Chicken Stock,0.5,cup,,,
+,,,Calcium,198,mg,,,,,Stewed Tomatoes,19,oz,,,
+,,,Iron,5,mg,,,,,Tomato Paste,2,tbsp,,,
+,,,Potassium,1492,mg,,,,,Sugar,1,tsp,,,
+,,,,,,,,,,Low Fat Plain Yogurt,0.75,cup,,,
+Fried Rice,8,479,Total Fat,7,g,Meal,“/public/assets/recipe_images/3.png”,,,cooked and chilled white rice,4.5,cup,normal,Start by bringing some water to a boil in a pot. ,
+,,,Saturated Fat,2.4,g,,,,,Salt,10,g,,Preheat a wide non-stick pan over medium high heat and add some vegetable oil along with 2 beaten eggs. ,
+,,,Cholesterol,60,mg,,,,,Vegetable oil,1,tbsp,,"Wipe out pan, add more oil, and then add the shrimp (or the protein of your choice). Once cooked, set aside in the bowl with the eggs.",
+,,,Sodium,686,mg,,,,,"eggs, beaten",2,,,Add 2 cloves of crushed garlic and cook for about 30 seconds before adding 4 cups of cooked white rice. ,
+,,,Total Carbohydrate,87.9,g,,,,,Shrimp (or protein of your choice),40,g,,Turn the heat to high and let the whole thing saute. Break up any big chunks of rice and cook for about 3-5 minutes.,
+,,,Dietary Fiber,2.6,g,,,,,"shiitake mushrooms, chopped",0.5,cup,,Add your eggs and protein back into the mix and top with some sesame oil and thinly sliced scallions. ,
+,,,Total Sugars,1.2,g,,,,,frozen peas,0.5,cup,,Reduce the heat to low and add some sesame seeds. Mix to combine.,
+,,,Protein,13.6,g,,,,,chopped ham,1,cup,,Finish it off by adding 1 Tbsp of butter and mixing that to combine.,
+,,,Vitamin D,5,mcg,,,,,"cloves garlic, crushed",2,,,,
+,,,Calcium,60,mg,,,,,oyster sauce,3,tbsp,,,
+,,,Iron,5,mg,,,,,soy sauce,3,tbsp,,,
+,,,Potassium,237,mg,,,,,butter,1,tbsp,,,
+Mexican Meat Loaf ,4,463,Total Fat,8.8,g,Meal,“/public/assets/recipe_images/4.png”,,,Lean Ground Beef,1,lbs,normal,"In bowl, place all ingredients except spray and using 3/4 cup of the salsa - mix well.",
+,,,Saturated Fat,3.1,g,,,,,"Black Beans (canned), rinsed and drained",1,cup,,"Spray a loaf pan (approx. 5""x9""), and add above mix.",
+,,,Cholesterol,101,mg,,,,,"Salsa, divided",1,cup,,Bake for 50 to 60 minutes - sit 15 minutes.,
+,,,Sodium,569,mg,,,,,Corn (frozen),0.5,cup,,Top with last 1/4 cup of salsa.,
+,,,Total Carbohydrate,47.7,g,,,,,Bread Crumbs,0.5,cup,,,
+,,,Dietary Fiber,9.6,g,,,,,,,,,,
+,,,Total Sugars,4.5,g,,,,,,,,,,
+,,,Protein,48.3,g,,,,,,,,,,
+,,,Vitamin D,0,mcg,,,,,,,,,,
+,,,Calcium ,103,mg,,,,,,,,,,
+,,,Iron,25,mg,,,,,,,,,,
+,,,Potassium,1448,mg,,,,,,,,,,
+Ratatouille,12,138,Total Fat,5.2,g,Snack,“/public/assets/recipe_images/5.png”,,,Tomatoes,1.5,lbs,normal,Peel and drain the tomatoes (don’t mind the seeds): cut out the stem cores, drop the whole tomatoes into boiling water for 2 minutes
+,,,Saturated Fat,0.7,g,,,,,Eggplant,0.5,lbs,,"Chop the onion and garlic. Clean the bell pepper, cut into small strips.",
+,,,Cholesterol,0,mg,,,,,Zucchini,1,lbs,,"In a large cooking pot with thick bottom, put in olive oil, onions, and chopped garlic. Add in the bell pepper. Cover to keep in the moisture.",
+,,,Sodium,60,mg,,,,,Bell Peppers,3,,,"Add the tomatoes and Herbes de Provence. If you don’t have good garden tomatoes with flavour, add a small can of tomato paste. ",
+,,,Total Carbohydrate,19.9,g,,,,,Onions,2,lbs,,Cut the eggplant into disks. Cut zucchini into disks.,
+,,,Dietary Fiber,7.7,g,,,,,Cloves of Garlic,6,,,Add the eggplant and zucchini to the pot.,
+,,,Total Sugars,10.8,g,,,,,"Basil, Thyme, Parsley",,,,Cook for about 30 minutes.,
+,,,Protein,5.9,g,,,,,Olive Oil,1,tbsp,,,
+,,,Vitamin D,0,mcg,,,,,Salt and pepper,10,g,,,
+,,,Calcium,47,mg,,,,,Tomato Paste,140,g,,,
+,,,Iron,1,mg,,,,,,,,,,
+,,,Potassium ,715,mg,,,,,,,,,,
+Devil Fruit Cake,6,614,Total Fat,7.1,g,Snack,“/public/assets/recipe_images/6.png”,,,cake flour ,90,g,special,"Separate 3 eggs for whites, add 90g of sugar.",
+,,,Saturated Fat,1.4,g,,,,,egg whites ,90,g,,"Add flour for elegance, 30g milk, 25g sunflower oil, 1/4 tsp green tea extract.",
+,,,Cholesterol,105,mg,,,,,granulated sugar,90,g,,Mix in the cake thoroughly.,
+,,,Sodium,129,mg,,,,,eggs yolks,3,,,Bake for 35 to 40 min at 150°C degrees,
+,,,Total Carbohydrate,132.5,g,,,,,milk ,30,g,,"Trim the cake, and cover with marshmallow fondant.",
+,,,Dietary Fiber,0.5,g,,,,,sunflower seed oil,25,g,,,
+,,,Total Sugars,77.8,g,,,,,green tea extract,0.25,tsp,,,
+,,,Protein,5.8,g,,,,,marshmallow fondant ,800,g,,,
+,,,Vitamin D,9,mcg,,,,,purple and green food color,5,g,,,
+,,,Calcium,24,mg,,,,,,,,,,
+,,,Iron,1,mg,,,,,,,,,,
+,,,Potassium,59,mg,,,,,,,,,,
+Ukrainian Borscht Soup,10,263,Total Fat,11.9,g,Snack,“/public/assets/recipe_images/7.png”,,,red beetroots,3,,normal,"Peel, grate and/or slice all vegetables (keeping sliced potatoes in cold water to prevent browning until ready to use then drain).",
+,,,Saturated Fat,4.2,g,,,,,extra virgin olive oil,4,tbsp,,Heat a large soup pot (5 1/2 Qt or larger) over medium/high heat and add 2 Tbsp olive oil.,
+,,,Cholesterol,10,mg,,,,,chicken broth,8,cups,,"Add grated beets and sauté 10 minutes, stirring occasionally until beets are softened.",
+,,,Sodium,695,mg,,,,,water,2,cups,,Add 8 cups broth and 2 cups water.,
+,,,Total Carbohydrate,29.8,g,,,,,potatoes,3,,,Add sliced potatoes and sliced carrots then cook for 10-15 minutes or until easily pierced with a fork.,
+,,,Dietary Fiber,5.3,g,,,,,carrots,2,,,"While potatoes are cooking, place a large skillet over medium/high heat and add 2 Tbsp oil.",
+,,,Total Sugars,5.8,g,,,,,celery ribs,2,,,"Add chopped onion, celery and bell pepper. Saute stirring occasionally until softened and lightly golden (7-8 minutes).",
+,,,Protein,11.4,g,,,,,onion,1,,,Add 4 Tbsp Ketchup and stir fry for 30 seconds then transfer to the soup pot to continue cooking with the potatoes.,
+,,,Vitamin D,0,mcg,,,,,tomato sauce,3,tbsp,,"When potatoes and carrots reach desired softness, add optional ingredients from the list.",
+,,,Calcium,109,mcg,,,,,red bell pepper,1,,,Simmer for an additional 2-3 minutes and add more spices to taste.,
+,,,Iron,3,mg,,,,,white cannelini beans with their juice,1,can,,Serve with a dollop of sour cream on top.,
+,,,Potassium,986,mg,,,,,bay leaves,2,,,,
+,,,,,,,,,,pressed garlic clove,1,,,,
+,,,,,,,,,,sour cream,1,cup,,,
+Beef Jerky ,4,226,Total Fat,7,g,Snack,“/public/assets/recipe_images/8.png”,,,Salt,0.75,tsp,normal,Mince or press garlic.,
+,,,Saturated Fat,2.7,g,,,,,pepper,0.25,tsp,,Mix all ingredients except beef to make brine.,
+,,,Cholesterol,101,mg,,,,,brown sugar,1,tbsp,,"Slice beef into ¼"" (½ cm) thick strips. Small chunks, about ¾"" (2 cm), of stewing beef may also be used. If possible, cut along the grain of the meat rather than across it. It may be easier to freeze the meat before attempting to cut it, as this will stop the meat pulling and deforming so easily.",
+,,,Sodium,858,mg,,,,,garlic,0.25,tsp,,"Marinate meat in overnight, or at least for an hour or two.",
+,,,Total Carbohydrate,3.8,g,,,,,Teriyaki sauce,2,tbsp,,"Place meat on racks and dry in a food dehydrator at 145 °F (63 °C) for 6-8 hours. May be dried in a 150 °F (65 °C) oven with foil-covered racks. In oven, turn meat over 3-4 hours into drying time and reduce temperature to 130 °F (55 °C).",
+,,,Dietary Fiber,0,g,,,,,Liquid Smoke,0.25,tsp,,Meat should bend but not break when properly dried.,
+,,,Total Sugars,3.5,g,,,,,beef (flank or skirt steak is ideal),450,g,,,
+,,,Protein,34.7,g,,,,,cheese powder,0.25,tsp,,,
+,,,Vitamin D,0,mcg,,,,,,,,,,
+,,,Calcium,7,mcg,,,,,,,,,,
+,,,Iron,21,mg,,,,,,,,,,
+,,,Potassium,479,mg,,,,,,,,,,
