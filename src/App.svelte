@@ -42,10 +42,11 @@
         div
             width: 100%
             height: 50%
-    #gain, #lose
-        &:hover
-            width: 75%
-        transition: width 250ms
+    @media (orientation: landscape)
+        #gain, #lose
+            &:hover
+                width: 75%
+            transition: width 250ms
     #gain
         background: $gain
     #lose
