@@ -17,10 +17,9 @@
 </fieldset>
 
 <style lang="sass">
-fieldset
-    display: flex
-    justify-content: center
-    align-items: center
-.material-icons-round
-    font-size: 8em
+    fieldset
+        display: flex
+        justify-content: center
+    .material-icons-round
+        font-size: 7em
 </style>
