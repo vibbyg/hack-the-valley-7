@@ -3,7 +3,6 @@ import type { Storage } from './storage';
 import { init } from './init';
 
 export const key = 'fit';
-export const assets = 'assets/'
 /// read from localStorage or use init
 const local = ((s: Storage) => ({
 	...s, ...JSON.parse(localStorage.getItem(key) || '{}')

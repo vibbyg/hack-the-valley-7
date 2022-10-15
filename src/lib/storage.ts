@@ -4,19 +4,30 @@ export enum Option{
 	None = 'none',
 }
 
+export enum Type{
+	Beverage = 'assets/beverage.png',
+	Meal = 'assets/meal.png',
+	Snack = 'assets/snack.png',
+}
+
+export interface Nutrient{
+	name: string,
+	value: number,
+	unit: string,
+}
+
 export interface Recipe{
 	name: string,
-	ingredients: string[],
-	/// url to photo (or relative path to public assets)
-	photo: string,
+	calories: number,
+	nutrients: Nutrient[],
+	type: Type,
+	src: string,
 }
 
 export interface Storage{
 	/// lose fat or gain weight
 	option: Option;
-	/// unlocked recipies
-	collected: string[];
 	/// available recipes
-	recipes: Recipe[];
+	collection: Recipe[];
 	concurrency: number;
 }

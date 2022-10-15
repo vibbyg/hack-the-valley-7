@@ -1,11 +1,13 @@
 <script lang="ts">
-	import Home from './lib/Main.svelte';
-	import { storage } from './lib/stores';
+	import Main from './lib/Main.svelte';
+	import { key, storage } from './lib/stores';
 	import { Option } from './lib/storage';
 
 	$: gain = $storage.option === Option.GainWeight;
 	$: lose = $storage.option === Option.LoseFat;
 
+	$: localStorage.setItem(key, JSON.stringify($storage));
+	$: console.log($storage.option)
 </script>
 
 {#if $storage.option === Option.None}
@@ -18,7 +20,7 @@
         </div>
     </main>
 {:else}
-    <Home/>
+    <Main/>
 {/if}
 
 <style lang="sass">
