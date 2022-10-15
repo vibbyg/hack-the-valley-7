@@ -16,11 +16,8 @@
 	// $: title = selected == 'Home' ? titles[$storage.option] : selected;
 	let hide = true;
 	const pages = [
-		{
-			src: 'assets/collection.png', title: 'Collection',
-		}, {
-			src: 'assets/gacha.png', title: 'Gacha',
-		}
+		{ src: 'assets/gacha.png', title: 'Gacha' },
+		{ src: 'assets/collection.png', title: 'Collection' },
 	];
 </script>
 
@@ -64,4 +61,7 @@
         height: 100%
         flex-direction: column
         align-items: center
+        img
+            padding: 0.3em 0
+
 </style>
