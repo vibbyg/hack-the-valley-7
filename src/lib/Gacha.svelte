@@ -14,7 +14,8 @@
 </script>
 <main class="{$$props.class}">
     <div id="middle">
-        <div class="left material-icons-round" on:click="{() => change(-1)}">
+        <div class="left material-icons-round" on:click="{() => change(-1)}"
+             title="Previous Banner">
             navigate_before
         </div>
         <div id="banners">
@@ -26,7 +27,8 @@
                 {/if}
             {/each}
         </div>
-        <div class="right material-icons-round" on:click="{() => change(1)}">
+        <div class="right material-icons-round" on:click="{() => change(1)}"
+             title="Next Banner">
             navigate_next
         </div>
     </div>
