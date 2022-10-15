@@ -5,30 +5,19 @@
 	import Collected from './Collected.svelte';
 </script>
 
-<main class="{$$props.class}">
-    <section id="left">
-        {#each $storage.recipes as recipe}
-            <Recipe {recipe}/>
-        {/each}
-    </section>
-    <section id="right">
-        <Collected/>
-    </section>
-</main>
+<section>
+    {#each $storage.recipes as recipe}
+        <Recipe {recipe}/>
+    {/each}
+</section>
 
 <style lang="sass">
-    main
-        display: flex
-    #right
-        flex: 1
-    #left
-        flex: 3
+    section
+        padding: 1em
         display: grid
         gap: 1em
-        grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: repeat(auto-fill, minmax(20em, 1fr))
     @media (orientation: portrait)
-        #left
+        section
             grid-template-columns: 1fr
-        #right
-            display: none
 </style>
