@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Gacha from './Gacha.svelte';
 	import { storage } from './stores';
-	import Recipes from './Recipes.svelte';
+	import Collected from './Recipes.svelte';
 </script>
 
 <main class="{$storage.option}">
     <div id="left">left</div>
     <div id="right">
         <Gacha/>
-        <Recipes/>
+        <Collected/>
     </div>
 </main>
 <style lang="sass">
