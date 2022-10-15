@@ -39,6 +39,7 @@
         position: fixed
         top: 0
         right: 0
+        height: $nav
     #toggle
         &.hide
             transform: rotate(180deg)
