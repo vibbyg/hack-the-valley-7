@@ -33,7 +33,7 @@
      on:click={() => hide=!hide}>
 </span>
 {#if !hide}
-    <nav transition:slide>
+    <nav transition:slide|local>
         {#each pages as { src, title }}
             <img {src} alt="{title}" {title} on:click={click}>
         {/each}
