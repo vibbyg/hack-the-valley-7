@@ -10,6 +10,24 @@ body
     font-family: Roboto, sans-serif
     font-size: 24px
     margin: 0
+
+// override firefox styles
+*:focus
+    outline: 0
+input
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
+    &[type=number]
+        -moz-appearance: textfield
+    &::placeholder
+        font-family: Roboto, sans-serif
+    font-size: inherit
+    font-family: unset
+    box-sizing: border-box
+    background: unset
+    color: unset
+
 .gain
     --theme: #{$gain}
     --theme-nav: #EE881D
