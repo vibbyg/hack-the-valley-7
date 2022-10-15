@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	import { storage } from './stores';
 	import Recipe from './Recipe.svelte';
 </script>

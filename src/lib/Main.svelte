@@ -8,7 +8,6 @@
 	let selected = 'Collection';
 	const pages = { Gacha, Collection };
 
-	$: localStorage.setItem(key, JSON.stringify($storage));
 </script>
 <main class="{$storage.option}">
     <div>

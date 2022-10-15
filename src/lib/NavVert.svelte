@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { storage } from './stores';
-	import { slide, fly } from 'svelte/transition';
-	import { Option } from './storage';
+	import { slide } from 'svelte/transition';
 
 	export let selected: string;
 
