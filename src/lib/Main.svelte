@@ -7,7 +7,7 @@
     import { storage } from './stores';
     import NavHori from './NavHori.svelte';
 
-    let selected = 'Information';
+    let selected = 'Collection';
     const pages = { Gacha, Collection, Calculator, Information };
 
 </script>
