@@ -18,7 +18,6 @@ const recipes = Array.from(Array(10), (_, i) => i + 1).map(i => ({
 /// default settings
 export const init = {
 	option: Option.None,
-	collected: ['Bubble Tea'],
 	recipes,
 	concurrency: 420,
 } as Storage;

@@ -14,8 +14,6 @@ export interface Recipe{
 export interface Storage{
 	/// lose fat or gain weight
 	option: Option;
-	/// unlocked recipies
-	collected: string[];
 	/// available recipes
 	recipes: Recipe[];
 	concurrency: number;
