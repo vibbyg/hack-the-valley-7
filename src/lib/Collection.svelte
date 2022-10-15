@@ -14,7 +14,7 @@
             </div>
             <div class="photo"></div>
             <div class="footer">
-                {#each nutrients as {name,value,unit}}
+                {#each nutrients as { name, value, unit }}
                     <div>{name}: {value} {unit}</div>
                 {/each}
             </div>
@@ -37,8 +37,9 @@
         display: flex
     .footer
         padding: 0 1em
-    .cal,.footer
+    .cal, .footer
         font-size: 0.9em
+        color: $background
     .header
         padding-left: 1em
         flex: 1
@@ -51,7 +52,6 @@
         .name
             flex: 2
         .cal
-            color: $background
             text-align: right
             flex: 1
     .photo

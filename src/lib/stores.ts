@@ -4,10 +4,9 @@ import { init } from './init';
 
 export const key = 'fit';
 /// read from localStorage or use init
-// this will be uncommented later, now we want to test init data
-// const local = ((s: Storage) => ({
-// 	...s, ...JSON.parse(localStorage.getItem(key) || '{}')
-// }))(init) as Storage;
-const local = init;
+const local = ((s: Storage) => ({
+	// ...s, ...JSON.parse(localStorage.getItem(key) || '{}')
+	...s, option: JSON.parse(localStorage.getItem(key) || '{}').option
+}))(init) as Storage;
 
 export const storage = writable<Storage>(local);
