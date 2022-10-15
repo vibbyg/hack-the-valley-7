@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { storage } from './stores';
+	const style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`
 </script>
 
 <section>
     {#each $storage.collection as {name, calories, nutrients, type, src}}
-        <div>
+        <div {style}>
             <span>{name}</span>
             <span>{calories} Calories</span>
             <img src="{type}" alt="">
@@ -24,7 +25,6 @@
         section
             grid-template-columns: 1fr
     div
-        background: var(--card) no-repeat
         display: flex
         flex-direction: column
         width: $width
