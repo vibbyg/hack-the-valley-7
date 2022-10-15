@@ -2,6 +2,8 @@
     import { fly } from 'svelte/transition';
     import { sineInOut as ease } from 'svelte/easing';
 
+    import Modal from './Modal.svelte';
+
     const max = 100;
     let tmp: string[] = [];
     for (let i = 1; i <= max; i++) {
@@ -11,6 +13,8 @@
     const banners = [...new Set(tmp)].map((x, i) => `${i + 1}. ${x}`);
     let selected = 0;
     let x = 0;
+
+    let infoOpen = false;
 
     function change(num: number): void{
         x = 400 * num;
@@ -31,6 +35,10 @@
         else if (e.code === "ArrowRight")
             change(1);
     }
+
+    function showInfo() {
+        infoOpen = true;
+    }
 </script>
 <section class="{$$props.class}">
     <style>
@@ -46,7 +54,9 @@
         <div id="banners">
             {#each banners as banner,i}
                 {#if i === selected}
-                    <div class="banner" in:flyIn|local out:flyOut|local>
+                    <div class="banner" in:flyIn|local out:flyOut|local
+                        on:click="{showInfo}"
+                    >
                         {banner}
                     </div>
                 {/if}
@@ -62,6 +72,9 @@
         <div on:click={() => alert('Summon x10')}>Summon x10</div>
     </div>
 </section>
+<Modal title="{banners[selected]}" bind:isOpen="{infoOpen}">
+    banana
+</Modal>
 
 <style lang="sass">
     @use 'sass:color'
@@ -83,6 +96,7 @@
         left: calc(50% - 10em)
         top: calc(50% - 10em)
         background-image: url("assets/dummy.png")
+        cursor: pointer
     #middle
         flex: 20
         display: flex
