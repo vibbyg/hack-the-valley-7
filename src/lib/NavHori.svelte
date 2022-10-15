@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { storage } from './stores';
-	import { Option } from './storage';
+    import { storage } from './stores';
+    import { Option } from './storage';
 
-	export let title = 'Untitled';
+    export let title = 'Untitled';
 
-	$: style = `background: url(assets/banner_${$storage.option}.png); background-size: cover;`;
+    $: style = `background: url(assets/banner_${$storage.option}.png); background-size: cover;`;
 </script>
 
 <nav {style}>

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { storage } from './stores';
+    import { storage } from './stores';
 
-	$: style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`;
+    $: style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`;
 </script>
 
 <section>

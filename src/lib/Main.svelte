@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Gacha from './Gacha.svelte';
-	import Collection from './Collection.svelte';
-	import NavVert from './NavVert.svelte';
-	import { storage } from './stores';
-	import NavHori from './NavHori.svelte';
+    import Gacha from './Gacha.svelte';
+    import Collection from './Collection.svelte';
+    import NavVert from './NavVert.svelte';
+    import { storage } from './stores';
+    import NavHori from './NavHori.svelte';
 
-	let selected = 'Collection';
-	const pages = { Gacha, Collection };
+    let selected = 'Collection';
+    const pages = { Gacha, Collection };
 
 </script>
 <main class="{$storage.option}">

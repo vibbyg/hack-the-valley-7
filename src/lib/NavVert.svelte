@@ -1,24 +1,24 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
+    import { slide } from 'svelte/transition';
 
-	export let selected: string;
+    export let selected: string;
 
-	function click({ target: { title } }: { target: HTMLElement }){
-		console.debug('click on', title);
-		selected = title;
-		hide = true;
-	}
+    function click({ target: { title } }: { target: HTMLElement }){
+        console.debug('click on', title);
+        selected = title;
+        hide = true;
+    }
 
-	// const titles = {
-	// 	[Option.LoseFat]: 'Lose Fat',
-	// 	[Option.GainWeight]: 'Gain Weight',
-	// };
-	// $: title = selected == 'Home' ? titles[$storage.option] : selected;
-	let hide = true;
-	const pages = [
-		{ src: 'assets/gacha.png', title: 'Gacha' },
-		{ src: 'assets/collection.png', title: 'Collection' },
-	];
+    // const titles = {
+    //     [Option.LoseFat]: 'Lose Fat',
+    //     [Option.GainWeight]: 'Gain Weight',
+    // };
+    // $: title = selected == 'Home' ? titles[$storage.option] : selected;
+    let hide = true;
+    const pages = [
+        { src: 'assets/gacha.png', title: 'Gacha' },
+        { src: 'assets/collection.png', title: 'Collection' },
+    ];
 </script>
 
 <svelte:head>
