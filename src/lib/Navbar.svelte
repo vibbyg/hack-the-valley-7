@@ -10,33 +10,30 @@
     <div id="spacer2"></div>
 </nav>
 
-<style>
-    nav{
-        display: flex;
-        background-color: var(--theme);
-    }
+<style lang="sass">
+    @use '../vars' as *
+    nav
+        display: flex
+        background-color: var(--theme)
 
-    #spacer1{
-        flex: 1;
-    }
+    #spacer1
+        flex: 1
 
-    #currency{
-        background-color: blue;
-        text-align: center;
-        border-radius: 10px;
-        margin: 10px;
-        padding: 10px;
-        flex: 2;
-    }
+    #currency
+        background-color: $background
+        color: var(--theme)
+        text-align: center
+        border-radius: 10px
+        margin: 10px
+        padding: 10px
+        flex: 2
 
-    #title{
-        text-align: center;
-        margin: 10px 100px;
-        padding: 10px;
-        flex: 7;
-    }
+    #title
+        text-align: center
+        margin: 10px 100px
+        padding: 10px
+        flex: 7
 
-    #spacer2{
-        flex: 3;
-    }
+    #spacer2
+        flex: 3
 </style>
