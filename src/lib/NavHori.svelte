@@ -4,13 +4,9 @@
 
 	export let title = 'Untitled';
 
-	const css = [
-		`background: url('assets/banner_${$storage.option}.png');`,
-		'background-size: cover'
-	];
 </script>
 
-<nav style="{css.join('')}">
+<nav>
     <div id="currency">{$storage.concurrency} pts</div>
     <div id="title" on:click={() => $storage.option = Option.None}>{title}</div>
 </nav>
@@ -20,6 +16,8 @@
     nav
         display: flex
         height: $nav
+        background-size: cover
+        background: var(--banner)
         background-size: cover
     nav > div
         display: flex
