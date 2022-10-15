@@ -5,6 +5,7 @@
 	export let title = 'Untitled';
 
 	let style = `background: url(assets/banner_${$storage.option}.png); background-size: cover;`;
+    let searchTerm = ''
 </script>
 
 <nav {style}>
