@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { storage } from './stores';
+
 	let title = 'Tit';
 </script>
 
-<nav>
+<nav style="background: url('assets/banner_{$storage.option}.png')">
     <div id="spacer1"></div>
     <div id="currency">{$storage.concurrency}</div>
     <div id="title">{title}</div>
