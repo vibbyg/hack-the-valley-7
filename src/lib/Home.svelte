@@ -1,27 +1,34 @@
 <script lang="ts">
-	import Gacha from './Gacha.svelte';
+
 	import { storage } from './stores';
+	import Recipe from './Recipe.svelte';
 	import Collected from './Collected.svelte';
 </script>
 
-<main class="{$storage.option}">
-    <div id="left">left</div>
-    <div id="right">
-        <Gacha/>
+<main class="{$$props.class}">
+    <section id="left">
+        {#each $storage.recipes as recipe}
+            <Recipe {recipe}/>
+        {/each}
+    </section>
+    <section id="right">
         <Collected/>
-    </div>
+    </section>
 </main>
+
 <style lang="sass">
     main
         display: flex
-        height: 100vh
-    div
-        height: 100%
-        display: flex
-        border: 1px solid var(--theme)
-        flex-direction: column
-        &#right
-            flex: 1
-        &#left
-            flex: 3
+    #right
+        flex: 1
+    #left
+        flex: 3
+        display: grid
+        gap: 1em
+        grid-template-columns: 1fr 1fr 1fr
+    @media (orientation: portrait)
+        #left
+            grid-template-columns: 1fr
+        #right
+            display: none
 </style>

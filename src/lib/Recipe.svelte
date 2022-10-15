@@ -1,0 +1,30 @@
+<script lang="ts">
+	import type { Recipe } from './storage';
+
+	export let recipe: Recipe;
+	const { name, ingredients, photo } = recipe;
+</script>
+
+<fieldset>
+    <legend>{name}</legend>
+    <ul>
+        {#each ingredients as i}
+            <li>{i}</li>
+        {/each}
+    </ul>
+    <!-- todo use <img> -->
+    <span class="material-icons-round">{photo}</span>
+</fieldset>
+
+<style lang="sass">
+    $dur: 200ms
+    fieldset
+        display: flex
+        justify-content: center
+        &:hover
+            color: var(--theme)
+            border-color: var(--theme)
+        transition: color $dur, border-color $dur
+    .material-icons-round
+        font-size: 7em
+</style>
