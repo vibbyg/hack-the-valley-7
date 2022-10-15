@@ -5,11 +5,13 @@
 	export let title = 'Untitled';
 
 	let style = `background: url(assets/banner_${$storage.option}.png); background-size: cover;`;
+    let searchTerm = ''
 </script>
 
 <nav {style}>
     <div id="currency">{$storage.concurrency} pts</div>
     <div id="title" on:click={() => $storage.option = Option.None}>{title}</div>
+    <div id="search"><input type="text" placeholder='Search Recipes...' bind:value={searchTerm}/></div>
 </nav>
 
 <style lang="sass">
@@ -31,4 +33,12 @@
     #title
         text-align: center
         flex: 7
+    #search
+        flex: 3
+        white-space: nowrap
+        align-items: center
+    #search input
+        padding: 0.7em
+        font-size: 0.7em
+
 </style>
