@@ -18,13 +18,13 @@
     @use '../vars' as *
     nav
         display: flex
-        padding: 0.5em
-        height: 3em
+        height: $nav
         background-size: cover
     nav > div
         display: flex
         justify-content: center
         align-items: center
+        margin: 0.5em
     #currency
         flex: 2
         background-color: $background

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { storage } from './stores';
+	import { slide, fly } from 'svelte/transition';
 	import { Option } from './storage';
 
 	export let selected: string;
@@ -14,24 +15,45 @@
 		[Option.GainWeight]: 'Gain Weight',
 	};
 	$: title = selected == 'Home' ? titles[$storage.option] : selected;
+	let hide = true;
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
 
-<nav>
-    <img src="assets/home.svg" alt="Home" title="Home" on:click={click}>
-    <img src="assets/gacha.png" alt="Gacha" title="Gacha" on:click={click}>
-</nav>
+<span>
+<img id="toggle" class:hide src="assets/expand.svg" alt=""
+     on:click={() => hide=!hide}>
+</span>
+{#if !hide}
+    <nav transition:slide>
+        <img src="assets/home.svg" alt="Home" title="Home" on:click={click}>
+        <img src="assets/gacha.png" alt="Gachal" title="Gacha" on:click={click}>
+    </nav>
+{/if}
 
 <style lang="sass">
     @use '../vars' as *
-    nav
-        display: flex
-        flex-direction: column
-        align-items: center
+    span
+        position: fixed
+        top: 0
+        right: 0
+    #toggle
+        &.hide
+            transform: rotate(180deg)
+        transition: transform 500ms
+
+    span, nav
         background: var(--theme-nav)
     img
-        width: 3em
+        width: $nav
+    nav
+        position: fixed
+        top: $nav
+        right: 0
+        display: flex
+        height: 100%
+        flex-direction: column
+        align-items: center
 </style>
