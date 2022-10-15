@@ -89,10 +89,8 @@
     @media(orientation: portrait)
         #summon > div
             margin: 0 1em
+        #middle
+            position: relative
         .left, .right
-            bottom: 5%
-        .left
-            left: 0
-        .right
-            right: 0
+            bottom: 0
 </style>
