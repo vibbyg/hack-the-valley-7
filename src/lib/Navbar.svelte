@@ -17,7 +17,7 @@
 		[Option.LoseFat]: 'Lose Fat',
 		[Option.GainWeight]: 'Gain Weight',
 	};
-	$: title = selected == 'Home' ? titles[$storage.option] : selected
+	$: title = selected == 'Home' ? titles[$storage.option] : selected;
 </script>
 
 <svelte:head>
@@ -27,7 +27,7 @@
 <nav style="{css.join('')}">
     <div class="material-icons-round" title="Home" on:click={click}>home</div>
     <div id="currency">{$storage.concurrency} pts</div>
-    <div id="title">{title}</div>
+    <div id="title" on:click={() => $storage.option = Option.None}>{title}</div>
     <div class="material-icons-round" title="Gacha" on:click={click}>cached
     </div>
 </nav>
