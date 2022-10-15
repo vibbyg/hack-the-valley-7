@@ -10,5 +10,4 @@
 	};
 </script>
 <Navbar bind:selected/>
-<svelte:head><title>{selected}</title></svelte:head>
 <svelte:component this="{pages[selected]}" class="{$storage.option}"/>

@@ -31,6 +31,7 @@
 </main>
 
 <style lang="sass">
+    @use 'sass:color'
     :global(body)
         height: 100vh
     main
@@ -63,7 +64,8 @@
         background: var(--theme)
         & > div
             margin: 0 5em
-            background-color: gold
+            background-color: var(--theme)
+            filter: brightness(200%)
             color: black
             padding: 30px
             border-radius: 10px
