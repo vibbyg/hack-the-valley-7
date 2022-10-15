@@ -10,16 +10,23 @@
 		selected = title;
 	}
 
-	const titles = {
-		[Option.LoseFat]: 'Lose Fat',
-		[Option.GainWeight]: 'Gain Weight',
-	};
-	$: title = selected == 'Home' ? titles[$storage.option] : selected;
+	// const titles = {
+	// 	[Option.LoseFat]: 'Lose Fat',
+	// 	[Option.GainWeight]: 'Gain Weight',
+	// };
+	// $: title = selected == 'Home' ? titles[$storage.option] : selected;
 	let hide = true;
+	const pages = [
+		{
+			src: 'assets/collection.png', title: 'Collection',
+        },{
+		    src: 'assets/gacha.png', title: 'Gacha',
+        }
+    ]
 </script>
 
 <svelte:head>
-    <title>{title}</title>
+    <title>{selected}</title>
 </svelte:head>
 
 <span>
@@ -28,8 +35,9 @@
 </span>
 {#if !hide}
     <nav transition:slide>
-        <img src="assets/home.svg" alt="Home" title="Home" on:click={click}>
-        <img src="assets/gacha.png" alt="Gachal" title="Gacha" on:click={click}>
+        {#each pages as {src,title}}
+            <img {src} alt="{title}" {title} on:click={click}>
+        {/each}
     </nav>
 {/if}
 
