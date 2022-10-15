@@ -2,18 +2,27 @@
 	import Cube from './lib/Cube.svelte';
 	import { key, storage } from './lib/stores';
 
-	$: localStorage.setItem(key, JSON.stringify($storage));
 </script>
 
 <main>
-    <Cube/>
+    <div id="gain">Gain Weight</div>
+    <div id="lose">Lose Fat</div>
 </main>
 
 <style lang="sass">
+    @use './vars' as *
     main
-        font-size: 3em
+        display: flex
+        font-size: 5em
+    main > div
+        width: 50vw
+        height: 100vh
         display: flex
         justify-content: center
         align-items: center
-        height: 100vh
+    #gain
+        background: $orange
+    #lose
+        background: $teal
+
 </style>
