@@ -3,11 +3,12 @@
     import Collection from './Collection.svelte';
     import NavVert from './NavVert.svelte';
     import Calc from './Calc.svelte';
+    import Info from './Info.svelte';
     import { storage } from './stores';
     import NavHori from './NavHori.svelte';
 
     let selected = 'Collection';
-    const pages = { Gacha, Collection, Calc };
+    const pages = { Gacha, Collection, Calc, Info };
 
 </script>
 <main class="{$storage.option}">
