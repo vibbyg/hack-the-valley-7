@@ -17,9 +17,14 @@
 </fieldset>
 
 <style lang="sass">
+    $dur: 200ms
     fieldset
         display: flex
         justify-content: center
+        &:hover
+            color: var(--theme)
+            border-color: var(--theme)
+        transition: color $dur, border-color $dur
     .material-icons-round
         font-size: 7em
 </style>
