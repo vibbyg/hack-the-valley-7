@@ -18,7 +18,8 @@
     const pages = [
         { src: 'assets/gacha.png', title: 'Gacha' },
         { src: 'assets/collection.png', title: 'Collection' },
-        { src: 'assets/calc.svg', title: 'Calculator'}
+        { src: 'assets/calc.svg', title: 'Calculator' },
+        { src: 'assets/info.png', title: 'Information' },
     ];
 </script>
 
