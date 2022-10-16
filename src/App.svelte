@@ -20,12 +20,10 @@
 
 {#if opt === Option.None}
     <main>
-        <div id="gain" out:g class="{opt}"
-             on:click={() => $storage.option = Option.GainWeight}>
+        <div id="gain" out:g on:click={() => $storage.option = Option.GainWeight}>
             Gain Weight
         </div>
-        <div id="lose" out:l class="{opt}"
-             on:click={() => $storage.option = Option.LoseFat}>
+        <div id="lose" out:l on:click={() => $storage.option = Option.LoseFat}>
             Lose Fat
         </div>
     </main>
