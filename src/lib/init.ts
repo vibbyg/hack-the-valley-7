@@ -1,4 +1,4 @@
-import type { Nutrition, Storage } from './storage';
+import type { Recipe, Storage } from './storage';
 import { Option, Type } from './storage';
 
 const recipes = Array.from(Array(10), (_, i) => i + 1).map(i => ({
@@ -10,7 +10,7 @@ const recipes = Array.from(Array(10), (_, i) => i + 1).map(i => ({
         value: Math.random() * 50 | 0,
         unit: ['g', 'mg', 'kg'][Math.random() * 3 | 0]
     }))
-})) as Nutrition[];
+})) as Recipe[];
 /// default settings
 export const init = {
     option: Option.None,

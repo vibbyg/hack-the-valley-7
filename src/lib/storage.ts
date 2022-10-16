@@ -16,18 +16,20 @@ export interface Nutrient{
     unit: string,
 }
 
-export interface Nutrition{
+export interface Recipe{
     name: string,
     calories: number,
     nutrients: Nutrient[],
     type: Type,
     src: string,
+    ingredients: Nutrient[],
+    steps: String[]
 }
 
 export interface Storage{
     /// lose fat or gain weight
     option: Option;
     /// available recipes
-    collection: Nutrition[];
+    collection: Recipe[];
     concurrency: number;
 }
