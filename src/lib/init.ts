@@ -1385,11 +1385,23 @@ export const collection = {
 
 
 /// default settings
+const done = Object.assign(
+    {},
+    ...Object.entries(collection).slice(0, 4).map(([name, recipe]) => ({ [name]: recipe })),
+    ...Object.entries(collection).filter(_ => (Math.random() * 5 | 0) === 0).map(
+        ([name, recipe]) => ({ [name]: recipe })
+    )
+);
 export const init = {
     option: Option.None,
-    collection: Object.assign(
-        {}, ...Object.entries(collection).filter(_ => (Math.random() * 3 | 0) === 0).map(
-            ([name, recipe]) => ({ [name]: recipe })
+    collection: done,
+    progress: Object.assign(
+        {}, ...Object.entries(collection).filter(([k, _]) => !done[k]).map(
+            ([name, { ingredients }]) => ({
+                [name]: Object.keys(ingredients).filter(
+                    _ => (Math.random() * 5 | 0) == 0
+                )
+            })
         )
     ),
     currency: 420,
