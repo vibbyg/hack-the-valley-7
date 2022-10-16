@@ -3,30 +3,6 @@
 
     $: style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`;
     let selected = '';
-    // .large-card
-    //     padding: $pad
-    //     align-items: center
-    //     width: 30em
-    //     height: 30em / 3 * 4 + $pad
-    //     width: 100%
-    // .large-name
-    // .large-content
-    //     padding-left: 1em
-    //     flex: 1
-    //     display: flex
-    //     align-items: center
-    //     img, .cal
-    //         padding-right: 0.25em
-    //     img
-    //         width: 2em
-    //     .name
-    //         flex: 2
-    //         text-shadow: 0.2em 0.2em 0.4em #000000
-    //     .cal
-    //         text-align: right
-    //         flex: 1
-
-
 </script>
 
 <section>
@@ -48,7 +24,7 @@
     </div>
     {:else if selected === name }
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="large-card" {style} on:click={() => selected = ''}>
+            <div class="large-card" id="box" {style} on:click={() => selected = ''}>
                 <div class="large-header">
                     <span class="name">{name}</span>
                     <span class="cal">{calories} cal.</span>
@@ -57,12 +33,12 @@
                 <div class="large-footer">
                     <h3>Ingredients:<br></h3>
                     {#each ingredients as { name, value, unit }}
-                        <div class="ingredient">{name}: {value} {unit}</div>
+                        <div>{name}: {value} {unit}</div>
                     {/each}
                     <h3>Steps:<br></h3>
                     {#each steps.slice(0, 4) as step}
                         <ul>
-                            <li><div class="steps">{step}</div></li>
+                            <li>{step}</li>
                         </ul>
                     {/each}
                 </div>
@@ -128,10 +104,12 @@
         cursor: pointer
 
     .large-card
+        transition: width 2s
         padding-top: 2em
         padding-left: 2.5em
-        padding-right: 5em
+        display: inline-flex
         flex-direction: column
+        align-items: stretch
         width: $width * 2.9
         height: $width * 4
         cursor: pointer
@@ -145,7 +123,8 @@
         align-items: center
         img, .cal
             flex: 1
-            padding-right: 0.25em
+            padding-right: 0.3em
+            padding-top: 0.2em
             text-align: right
             font-size: 1.8em
             margin-top: -5em
@@ -153,8 +132,8 @@
             width: 0.4em
         .name
             padding-left: 0.25em
-            font-size: 3em
-            margin-top: -3.7em
+            font-size: 2.5em
+            margin-top: -4.2em
             flex: 2
             text-shadow: 0.2em 0.2em 0.4em #000000
         
@@ -162,13 +141,7 @@
         flex: 2
         padding-left: 1em
         padding-right: 4em
-        padding-bottom: 16em
-        padding-top: 2em
         display: flex
         flex-direction: column
-        .ingredient
 
-        .steps
-    
-        
 </style>
