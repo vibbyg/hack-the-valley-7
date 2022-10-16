@@ -5,6 +5,7 @@
 
     import { storage } from './stores';
     import Modal from './Modal.svelte';
+    import Card from './Card.svelte';
 
     import bannerData from './banners.json';
 
@@ -89,16 +90,10 @@
 </section>
 {#if isSummoning}
     <div id="summon-screen">
-        {#if amount > 1}
-            Summoned
-            <ul>
-                {#each Array(amount) as _}
-                    <li> {names[Math.random() * names.length | 0]} </li>
-                {/each}
-            </ul>
-        {:else}
-            Summoned a {names[Math.random() * names.length | 0]}
-        {/if}
+        <h1>Congratulations!</h1>
+        <div id="card-area">
+            <Card />
+        </div>
         <button on:click={() => isSummoning = false}>OK</button>
     </div>
 {/if}
@@ -149,6 +144,19 @@
         align-items: center
         background: url('assets/background.gif')
         background-size: cover
+        overflow: hidden
+        > button
+            flex: 1
+
+    @keyframes summon
+        from
+            transform: scale(10)
+        to
+            transform: scale(1.1)
+    #card-area
+        transform: scale(1.1)
+        animation: 1s linear 0s summon
+        flex-grow: 1
     section
         display: flex
         flex: 1

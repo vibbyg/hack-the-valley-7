@@ -65,9 +65,9 @@
     $pad: 1em
     $width: 15em
     .card
+        font-size: 24px
         padding: $pad
         flex-direction: column
         width: $width
         height: $width / 3 * 4 + $pad
-        cursor: pointer
 </style>
