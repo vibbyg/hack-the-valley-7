@@ -26,6 +26,7 @@
         color: white
         text-shadow: $shadow $shadow $shadow #000000
     section
+        line-height: 1.5
         width: 100%
         font-size: 2em
     img
