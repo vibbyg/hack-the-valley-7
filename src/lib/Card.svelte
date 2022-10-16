@@ -1,27 +1,24 @@
 <script lang="ts">
     import { storage } from './stores';
+    import type { Recipe } from './storage';
 
     $: style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`;
 
-    let name = "Card name";
-    let calories = 500;
-    let nutrients = [{name: "nutrient", value: 69, unit: "GB"},
-    {name: "nutrient", value: 69, unit: "TB"},{name: "nutrient", value: 69, unit: "MB"},
-    {name: "nutrient", value: 69, unit: "PB"}];
-    let type = 'assets/meal.png';
-    let src = "assets/dummy.png";
+    export let name: string;
+    export let recipe: Recipe;
 </script>
 
 <div class="card" {style}>
     <div class="header">
         <span class="name">{name}</span>
-        <span class="cal">{calories} cal.</span>
-        <img src="{type}" alt="">
+        <span class="cal">{recipe.calories} cal.</span>
+        <img src="{recipe.type}" alt="">
     </div>
-    <div class="photo"><img src="{src}" alt=""></div>
+    <div class="photo"><img src="{recipe.src}" alt=""></div>
     <div class="footer">
-        {#each nutrients.slice(3, 5) as { name, value, unit }}
-            <div>{name}: {value} {unit}<br></div>
+        {#each Object.entries(recipe.nutrients).slice(0, 3) as [name, nutrients]}
+            <div>{name}: {nutrients.value} {nutrients.unit}<br>
+            </div>
         {/each}
     </div>
 </div>
@@ -32,7 +29,7 @@
         display: flex
     .cal, .footer
         font-size: 0.9em
-        color: $background
+        color: $color
     .header
         padding-left: 1em
         flex: 1
@@ -44,7 +41,8 @@
             width: 2em
         .name
             flex: 2
-            text-shadow: 0.2em 0.2em 0.4em #000000
+            color: white
+            text-shadow: 0.2em 0.2em 0.4em #000
         .cal
             text-align: right
             flex: 1
@@ -70,4 +68,5 @@
         flex-direction: column
         width: $width
         height: $width / 3 * 4 + $pad
+        cursor: pointer
 </style>
