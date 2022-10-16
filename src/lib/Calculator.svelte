@@ -74,6 +74,7 @@
 </section>
 
 <style lang="sass">
+    @use '../vars' as *
     $pad: 5px
     input
         border-radius: 10px
@@ -83,7 +84,6 @@
         width: 5em
     input[type="radio"]
         display: none
-    $shadow: 4px
     section
         display: flex
         flex-direction: column
