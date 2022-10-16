@@ -11,7 +11,7 @@
     $: localStorage.setItem(key, JSON.stringify($storage));
     const [g, l] = [Option.GainWeight, Option.LoseFat].map(o => () => ({
         duration: 500,
-        css: t => `width: ${
+        css: t => `flex: ${
             opt === o ? (2 - cubicInOut(t)) * 50 : cubicInOut(t) * 50
         // opt === o ? 60 + (1 - cubicInOut(t)) * 40 : cubicInOut(t) * 40
         }%`
@@ -40,7 +40,7 @@
         font-size: 5em
         overflow: hidden
     div
-        width: 50%
+        flex: 1
         height: 100%
         overflow: hidden
         white-space: nowrap
@@ -55,12 +55,9 @@
         main
             flex-direction: column
             font-size: 2em
-        div
-            width: 100%
-            height: 50%
     @media (orientation: landscape)
         #gain, #lose
             &:hover
-                width: 60%
-            transition: width 100ms
+                flex: 1.5
+            transition: flex 100ms
 </style>
