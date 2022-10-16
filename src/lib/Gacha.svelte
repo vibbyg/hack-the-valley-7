@@ -10,10 +10,13 @@
     const bannerList = bannerData["fullList"];
     const banners = bannerData[$storage.option];
 
+    const tmpSummonData = ["banana", "lemon", "cereal"];
+
     let selected = 0;
     let x = 0;
 
-    let infoOpen = false;
+    let isInfoOpen = false;
+    let isSummoning = false;
 
     function change(num: number): void {
         x = 400 * num;
@@ -35,8 +38,8 @@
             change(1);
     }
 
-    function showInfo() {
-        infoOpen = true;
+    function summon() {
+        return tmpSummonData[Math.floor(Math.random() * tmpSummonData.length)];
     }
 </script>
 <section class="{$$props.class}">
@@ -54,7 +57,7 @@
             {#each banners as banner, i}
                 {#if i === selected}
                 <div class="banner" in:flyIn|local out:flyOut|local
-                    on:click="{showInfo}"
+                    on:click="{() => isInfoOpen = true}"
                 >
                     <img src="assets/banners/{bannerList[banner]["img"]}"
                         alt="{bannerList[banner]["name"]}"
@@ -69,11 +72,19 @@
         </div>
     </div>
     <div id="summon">
-        <div on:click={() => alert('Summon')}>Summon</div>
+        <div on:click={() => isSummoning = true}>Summon</div>
         <div on:click={() => alert('Summon x10')}>Summon x10</div>
     </div>
 </section>
-<Modal title="{bannerList[banners[selected]]["name"]}" bind:isOpen="{infoOpen}">
+{#if isSummoning}
+<div id="summon-screen">
+    Summoned a {summon()}
+    <button on:click={() => isSummoning = false}>OK</button>
+</div>
+{/if}
+<Modal title="{bannerList[banners[selected]]["name"]}"
+    bind:isOpen="{isInfoOpen}"
+>
     {bannerList[banners[selected]]["descript"]}
 </Modal>
 
@@ -135,6 +146,16 @@
             padding: 1em
             border-radius: 10px
             cursor: pointer
+    #summon-screen
+        background-color: white
+        z-index: 9999
+        position: absolute
+        width: 100vw
+        height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
     @media(orientation: portrait)
         #summon > div
             margin: 0 1em

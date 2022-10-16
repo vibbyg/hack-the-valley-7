@@ -1,10 +1,6 @@
 <script lang="ts">
     export let title: string;
     export let isOpen = true;
-
-    function close(): void {
-        isOpen = false;
-    }
 </script>
 
 {#if isOpen}
@@ -14,7 +10,9 @@
         <div id="body">
             <slot></slot>
         </div>
-        <div id="close" class="material-icons-round" on:click="{close}">
+        <div id="close" class="material-icons-round"
+            on:click="{() => isOpen = false}"
+        >
             close
         </div>
     </div>
@@ -26,7 +24,7 @@
 
     #blocker {
         background-color: #0000007f;
-        z-index: 999;
+        z-index: 9999;
         position: absolute;
         width: 100vw;
         height: 100vh;
