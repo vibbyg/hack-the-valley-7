@@ -1550,6 +1550,125 @@ const recipes = [
             "Transfer the shake into a glass.",
             "Add toppings: Be creative here and add toppings you like."
         ]
+    },
+    {
+        name: "Chili Lime Shrimp",
+		calories: 230,
+        nutrients: [
+			{
+				name: "Total Fat",
+				value: 13,
+				unit: "g"
+			},
+			{
+				name: "Saturated Fat",
+				value: 2,
+				unit: "g"
+			},
+			{
+				name: "Cholesterol",
+				value: 138,
+				unit: "mg"
+			},
+			{
+				name: "Sodium",
+				value: 315,
+				unit: "mg"
+			},
+			{
+				name: "Total Carbohydrate",
+				value: 10,
+				unit: "g"
+			},
+			{
+				name: "Dietary Fiber",
+				value: 2,
+				unit: "g"
+			},
+			{
+				name: "Total Sugars",
+				value: 1,
+				unit: "g"
+			},
+			{
+				name: "Protein",
+				value: 20,
+				unit: "g"
+			}
+		],
+        type: Type.Meal,
+		src: "/public/assets/recipe_images/13.png",
+        ingredients: [
+			{
+				name: "uncooked shrimp",
+				value: 2,
+				unit: "lbs"
+			},
+            {
+				name: "garlic cloves, minced",
+				value: 4,
+				unit: "u"
+			},
+            {
+				name: "paprika",
+				value: 1,
+				unit: "tsp"
+			},
+            {
+				name: "ground ancho chile pepper",
+				value: 1,
+				unit: "tsp"
+			},
+            {
+				name: "ground cumin",
+				value: 1,
+				unit: "tsp"
+			},
+            {
+				name: "salt",
+				value: 0.5,
+				unit: "tsp"
+			},
+            {
+				name: "pepper",
+				value: 0.25,
+				unit: "tsp"
+			},
+            {
+				name: "medium lime",
+				value: 1,
+				unit: "u"
+			},
+            {
+				name: "crushed tortilla chips",
+				value: 1,
+				unit: "cup"
+			},
+            {
+				name: "chopped fresh cilantro",
+				value: 0.25,
+				unit: "cup"
+			},
+            {
+				name: "olive oil",
+				value: 0.25,
+				unit: "cup"
+			},
+            {
+				name: "cherry tomatoes",
+				value: 1,
+				unit: "cup"
+			},
+            {
+				name: "medium avocado, peeled and cubed",
+				value: 1,
+				unit: "u"
+			}
+        ],
+        steps: [
+            "Preheat oven to 425°. Place the first 7 ingredients in a greased 15x10x1-in. pan. Finely grate zest from lime. Cut lime crosswise in half; squeeze juice. Add zest and juice to shrimp mixture; toss to coat.",
+            "In a small bowl, combine crushed chips, cilantro and oil; sprinkle over shrimp mixture. Bake until shrimp turn pink, 12-15 minutes. Top with tomatoes and avocado. If desired, serve with additional lime wedges and cilantro."
+        ]
     }
 ] as Recipe[];
 

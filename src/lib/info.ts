@@ -6,19 +6,19 @@ export interface Info{
 
 export const info = {
     Calories: {
-        content: 'Bacon ipsum dolor amet buffalo brisket shank salami bresaola ribeye. Ham hock capicola boudin, cow turducken short loin beef ribs beef shank venison doner strip steak brisket landjaeger spare ribs. Sausage short ribs short loin ball tip tenderloin burgdoggen. Burgdoggen swine ground round meatloaf, strip steak frankfurter cow ham hock rump venison fatback landjaeger leberkas boudin short loin. Filet mignon biltong shankle spare ribs bacon short loin.',
+        content: 'A calorie is a unit of heat equal to a hundredth of the quantity of heat required to raise the temperature of 1 gram of water from 0 to 100 degrees Celcius at 1 atmosphere pressure.',
         src: '',
     },
     Protein: {
-        content: 'Chislic meatball tenderloin andouille brisket chuck turducken shank venison. Doner pig turducken shoulder pork chop spare ribs cupim cow ribeye. Short loin chislic fatback tenderloin, capicola salami kielbasa strip steak shank tail swine beef ribs. Tri-tip pancetta cow pork alcatra andouille. Tri-tip pastrami sausage burgdoggen, prosciutto turkey frankfurter spare ribs chicken flank shankle chuck landjaeger ball tip. Kielbasa short loin short ribs salami venison, picanha pork belly capicola shank kevin ham beef ribs. Beef ribs hamburger beef landjaeger, ribeye leberkas prosciutto shoulder tenderloin bacon sausage doner short loin chislic t-bone.',
+        content: 'Any of a group of complex organic macromolecules that contain carbon, hydrogen, oxygen, nitrogen, and usually sulfur and are composed of one or more chains of amino acids. Proteins are fundamental components of all living cells and include many substances, such as enzymes, hormones, and antibodies, that are necessary for the proper functioning of an organism. They are essential in the diet of animals for the growth and repair of tissue and can be obtained from foods such as meat, fish, eggs, milk, and legumes.',
         src: '',
     },
     Carbohydrates: {
-        content: 'Pig flank brisket, jowl porchetta turkey frankfurter meatloaf chuck alcatra buffalo pancetta. Tail short ribs capicola meatloaf. Chislic tail beef ribs pig pastrami jerky, kevin shankle pancetta cow brisket ham hock short loin. Venison buffalo cupim t-bone pork loin rump bacon. Cupim shankle pig ground round hamburger flank, pork bresaola venison.',
+        content: 'Any of a group of organic compounds that includes sugars, starches, celluloses, and gums and serves as a major energy source in the diet of animals. These compounds are produced by photosynthetic plants and contain only carbon, hydrogen, and oxygen, usually in the ratio 1:2:1.',
         src: ''
     },
     Fiber: {
-        content: 'Drumstick pig boudin andouille, tail salami spare ribs rump pork belly ham hock. Kevin meatloaf fatback picanha sausage burgdoggen, drumstick tail sirloin pork belly boudin jowl ball tip flank. Cupim drumstick meatball landjaeger fatback. Ball tip short loin capicola andouille beef ribs landjaeger pancetta pork belly picanha brisket burgdoggen. Kielbasa kevin andouille jerky chislic. Biltong jerky pork loin, tongue short ribs meatloaf boudin sausage shank filet mignon.',
+        content: 'Fiber is a type of carbohydrate that the body can’t digest. Though most carbohydrates are broken down into sugar molecules called glucose, fiber cannot be broken down into sugar molecules, and instead it passes through the body undigested. Fiber helps regulate the body’s use of sugars, helping to keep hunger and blood sugar in check.',
         src: ''
     },
     ['Gain Phase']: {
