@@ -24,6 +24,16 @@
       "name": "Standard Meal 4",
       "img": "Standard Meal Banner (4).gif",
       "descript": "Limited time doughnuts"
+    },
+    "6": {
+      "name": "Standard Meal 8",
+      "img": "Standard Meal Banner (8).gif",
+      "descript": "Limited time dragonfruit"
+    },
+    "7": {
+      "name": "Standard Meal Warm",
+      "img": "Standard Meal Warm.gif",
+      "descript": "Limited time pineapple"
     }
   },
   "gain": ["1", "2", "5"],

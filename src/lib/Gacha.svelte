@@ -70,6 +70,11 @@
              title="Next Banner">
             navigate_next
         </div>
+        <Modal title="{bannerList[banners[selected]]["name"]}"
+            bind:isOpen="{isInfoOpen}"
+        >
+            {bannerList[banners[selected]]["descript"]}
+        </Modal>
     </div>
     <div id="summon">
         <div on:click={() => isSummoning = true}>Summon</div>
@@ -82,11 +87,6 @@
     <button on:click={() => isSummoning = false}>OK</button>
 </div>
 {/if}
-<Modal title="{bannerList[banners[selected]]["name"]}"
-    bind:isOpen="{isInfoOpen}"
->
-    {bannerList[banners[selected]]["descript"]}
-</Modal>
 
 <style lang="sass">
     @use 'sass:color'
