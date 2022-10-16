@@ -103,7 +103,7 @@ const recipes = [
 		]
 	},
 	{
-		name: "Exotic Ginger Cumin Chicken",
+		name: "Ginger Chicken",
 		calories: 724,
 		nutrients: [
 			{
@@ -379,7 +379,7 @@ const recipes = [
 		]
 	},
 	{
-		name: "Mexican Meat Loaf",
+		name: "Meat Loaf",
 		calories: 463,
 		nutrients: [
 			{
@@ -791,7 +791,7 @@ const recipes = [
 		]
 	} ,
 	{
-		name: "Ukrainian Borscht Soup",
+		name: "Borscht Soup",
 		calories: 263,
 		nutrients: [
 			{
@@ -1209,7 +1209,7 @@ const recipes = [
 		]
 	},
 	{
-		name: "Fruit & Yogurt Smoothie",
+		name: "Fruit Smoothie",
 		calories: 293,
 		nutrients: [
 			{
@@ -1343,7 +1343,7 @@ const recipes = [
 		]
 	},
     {
-        name: "Greek Yogurt & Fresh Berries",
+        name: "Greek Yogurt",
 		calories: 300,
 		nutrients: [
 			{
@@ -1439,7 +1439,7 @@ const recipes = [
         ]
     },
     {
-        name: "Peanut Butter Protein Shake",
+        name: "Peanut Butter Shake",
         calories: 483,
 		nutrients: [
 			{
