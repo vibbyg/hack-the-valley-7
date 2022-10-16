@@ -8,13 +8,14 @@
     import NavHori from './NavHori.svelte';
     import Quiz from './Quiz.svelte';
 
-    let selected = 'Collection';
-    const pages = { Gacha, Calculator,Collection, Information, Quiz };
+    let selected = 'Calculator';
+    const pages = { Gacha, Calculator, Collection, Information, Quiz };
 
 </script>
 <main class="{$storage.option}">
     <div>
-        <NavHori title="{selected}"/>
+        <NavHori
+                title="{selected === 'Calculator'?'Macros Calculator':selected}"/>;
         <svelte:component this="{pages[selected]}"/>
     </div>
     <NavVert bind:selected/>
