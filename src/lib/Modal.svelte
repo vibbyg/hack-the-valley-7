@@ -3,7 +3,6 @@
     export let isOpen = true;
 </script>
 
-{#if isOpen}
 <div id="blocker">
     <div id="box">
         <div id="title">{title}</div>
@@ -11,13 +10,11 @@
             <slot></slot>
         </div>
         <div id="close" class="material-icons-round"
-            on:click="{() => isOpen = false}"
-        >
+             on:click="{() => isOpen = false}">
             close
         </div>
     </div>
 </div>
-{/if}
 
 <style>
     @import "https://fonts.googleapis.com/icon?family=Material+Icons+Round";
@@ -33,26 +30,25 @@
         justify-content: center;
         align-items: center;
     }
-
-    #box {
+    #box{
         background-color: white;
         border-radius: 10px;
         position: absolute;
         width: 20em;
     }
 
-    #title {
+    #title{
         text-align: center;
         font-weight: bold;
         font-size: 24pt;
         padding: 0.5em;
     }
 
-    #body {
+    #body{
         padding: 0.5em;
     }
 
-    #close {
+    #close{
         font-size: 1.2em;
         user-select: none;
         position: absolute;
