@@ -65,6 +65,8 @@
 
 <style lang="sass">
     $pad: 5px
+    input
+        border-radius: 10px
     input[type="number"]
         color: unset
         background: unset
@@ -81,6 +83,11 @@
         font-size: unset
         text-align: center
         padding: $pad
+        transition: background-color 0.5s
+        cursor: pointer
+    label:hover
+        transition: background-color 0.5s
+        background-color: var(--theme-nav)
     #goal, .wrap
         flex: 1
     #result
@@ -91,6 +98,7 @@
         border: $pad solid var(--theme)
     .radio
         +border()
+        border-radius: 10px
     div, span
         &:not(.unknown) > label
             //box-shadow: $box
