@@ -68,6 +68,7 @@
                 {#if i === selected}
                     <div class="banner" in:flyIn|local out:flyOut|local
                          on:click="{() => isInfoOpen = true}">
+                        <img class="glow" src="assets/gacha_glow.gif" alt="">
                         <img src="assets/banners/{bannerList[banner].img}"
                              alt="{bannerList[banner].name}"/>
                     </div>
@@ -175,7 +176,10 @@
         top: calc(50% - $size / 2)
         cursor: pointer
     .banner > img
+        position: absolute
         width: 100%
+        &.glow
+            width: 110%
     .left, .right
         position: absolute
         color: var(--theme)
