@@ -1392,15 +1392,14 @@ const done = Object.assign(
         ([name, recipe]) => ({ [name]: recipe })
     )
 );
+
 export const init = {
     option: Option.None,
     collection: done,
     progress: Object.assign(
         {}, ...Object.entries(collection).filter(([k, _]) => !done[k]).map(
             ([name, { ingredients }]) => ({
-                [name]: Object.keys(ingredients).filter(
-                    _ => (Math.random() * 5 | 0) == 0
-                )
+                [name]: Object.keys(ingredients).filter(i => i)
             })
         )
     ),

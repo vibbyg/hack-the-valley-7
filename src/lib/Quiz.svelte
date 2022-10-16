@@ -15,13 +15,14 @@
     }
 
     let [name, ingredients] = random();
-    let ings:Set<string>= new Set(ingredients as string[]);
+    let ings: Set<string> = new Set(ingredients as string[]);
     let value = '';
     $: if(!ings.has(value) && collection[name].ingredients[value]){
         $storage.progress[name].push(value);
         // this recipe is completed
         if($storage.progress[name].length === Object.keys(collection[name].ingredients).length){
-
+            $storage.collection[name] = collection[name];
+            delete $storage.progress[name];
         }
         [name, ingredients] = random();
     }
