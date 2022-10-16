@@ -34,18 +34,13 @@
             height: 100%
     #toggle
         transform: rotate(180deg)
-        &:hover
-            transform: rotate(0)
         transition: transform 500ms
-
     span, nav
         background: var(--theme-nav)
     img
         width: $nav
     nav
         height: $nav
-        &:hover
-            height: 100%
         position: fixed
         right: 0
         display: flex
@@ -54,5 +49,13 @@
         transition: height 250ms
         img
             padding: 0.3em 0
-
+        &:hover
+            height: 100%
+            img
+                display: block
+            #toggle
+                transform: rotate(0)
+        &:not(:hover)
+            img:not(#toggle)
+                display: none
 </style>
