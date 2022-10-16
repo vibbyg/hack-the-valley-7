@@ -1,7 +1,7 @@
 <script lang="ts">
     import { fly } from 'svelte/transition';
     import { sineInOut as ease } from 'svelte/easing';
-    import { recipes } from './init';
+    import { collection } from './init';
 
     import { storage } from './stores';
     import Modal from './Modal.svelte';
@@ -12,7 +12,7 @@
     const banners: any[] = bannerData[$storage.option];
 
     // const tmpSummonData = ['banana', 'lemon', 'cereal'];
-    const names = recipes.map(({ name }) => name);
+    const names = Object.keys(collection);
 
     let selected = 0;
     let x = 0;

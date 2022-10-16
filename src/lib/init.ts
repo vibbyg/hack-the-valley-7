@@ -1381,13 +1381,17 @@ export const collection = {
             'In a small bowl, combine crushed chips, cilantro and oil; sprinkle over shrimp mixture. Bake until shrimp turn pink, 12-15 minutes. Top with tomatoes and avocado. If desired, serve with additional lime wedges and cilantro.'
         ]
     }
-};
+} as { [name: string]: Recipe };
 
 
 /// default settings
 export const init = {
     option: Option.None,
-    collection,
+    collection: Object.assign(
+        {}, ...Object.entries(collection).filter(_ => (Math.random() * 3 | 0) === 0).map(
+            ([name, recipe]) => ({ [name]: recipe })
+        )
+    ),
     currency: 420,
 } as Storage;
 
