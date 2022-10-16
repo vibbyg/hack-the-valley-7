@@ -1,39 +1,46 @@
 <script lang="ts">
     import { storage } from './stores';
-    import { blur } from "svelte/transition";
+    import { blur } from 'svelte/transition';
+    import Background from './Background.svelte';
 
-    $: style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`;
     let selected = '';
+    $: style = `background: url(assets/${selected?'back':'card'}_${$storage.option}.svg) no-repeat;`;
 </script>
 
+<Background prefix="colle_" ext="png"/>
 <section>
-    {#each Object.entries($storage.collection) as [ name, recipe ]}
-    {#if !selected }
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div class="card" {style} transition:blur|local="{{delay: 300, duration: 1000}}" on:click={() => selected = name}>
-        <div class="header">
-            <span class="name">{name}</span>
-            <span class="cal">{recipe.calories} cal.</span>
-            <img src="{recipe.type}" alt="">
-        </div>
-        <div class="photo"><img src="{recipe.src}" alt=""></div>
-        <div class="footer">
-            {#each Object.entries(recipe.nutrients).slice(0, 3) as [ name, nutrients ]}
-                <div>{name}: {nutrients.value} {nutrients.unit}<br></div>
-            {/each}
-        </div>
-    </div>
-    {:else if selected === name }
+    {#each Object.entries($storage.collection) as [name, recipe]}
+        {#if !selected }
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="large-card" {style} transition:blur|local="{{delay: 300, duration: 1000}}" on:click={() => selected = ''}>
+            <div class="card" {style}
+                 transition:blur|local="{{delay: 300, duration: 1000}}"
+                 on:click={() => selected = name}>
+                <div class="header">
+                    <span class="name">{name}</span>
+                    <span class="cal">{recipe.calories} cal.</span>
+                    <img src="{recipe.type}" alt="">
+                </div>
+                <div class="photo"><img src="{recipe.src}" alt=""></div>
+                <div class="footer">
+                    {#each Object.entries(recipe.nutrients).slice(0, 3) as [name, nutrients]}
+                        <div>{name}: {nutrients.value} {nutrients.unit}<br>
+                        </div>
+                    {/each}
+                </div>
+            </div>
+        {:else if selected === name }
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <div class="large-card" {style}
+                 transition:blur|local="{{delay: 300, duration: 1000}}"
+                 on:click={() => selected = ''}>
                 <div class="large-header">
                     <span class="name">{name}</span>
                     <span class="cal">{recipe.calories} cal.</span>
-                    <img class="large-img" src="{recipe.src}" alt=""> 
+                    <img class="large-img" src="{recipe.src}" alt="">
                 </div>
                 <div class="large-footer">
                     <h3>Ingredients:<br></h3>
-                    {#each Object.entries(recipe.ingredients) as [ name, nutrients ]}
+                    {#each Object.entries(recipe.ingredients) as [name, nutrients]}
                         <div>{name}: {nutrients.value} {nutrients.unit}</div>
                     {/each}
                     <h3>Steps:<br></h3>
@@ -44,7 +51,7 @@
                     {/each}
                 </div>
             </div>
-    {/if}
+        {/if}
     {/each}
 </section>
 
@@ -78,7 +85,7 @@
         .name
             flex: 2
             color: white
-            text-shadow: 0.2em 0.2em 0.4em #000000
+            text-shadow: 0.2em 0.2em 0.4em #000
         .cal
             text-align: right
             flex: 1
@@ -126,7 +133,6 @@
             background: none !important
             font-size: 1rem
 
-
     .large-header
         margin-right: 2em
         flex: 1
@@ -147,8 +153,8 @@
             padding-left: 0.25em
             font-size: 2.5em
             flex: 3
-            text-shadow: 0.2em 0.2em 0.4em #000000
-        
+            text-shadow: 0.2em 0.2em 0.4em #000
+
     .large-footer
         flex: 6
         padding-left: 1em
