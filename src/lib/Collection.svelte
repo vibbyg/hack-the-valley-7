@@ -116,6 +116,9 @@
         width: $width * 2.9
         height: $width * 4
         cursor: pointer
+    @media (orientation: portrait)
+        .large-card
+            font-size: 0.5rem
 
 
     .large-header
