@@ -23,8 +23,11 @@
     nav
         display: flex
         height: $nav
-        font-size: 2em
+        font-size: 1.5em
         z-index: 999
+    @media(orientation: landscape)
+        nav
+            font-size: 2em
     nav > div
         display: flex
         justify-content: center
