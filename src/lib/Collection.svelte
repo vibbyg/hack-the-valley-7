@@ -50,13 +50,20 @@
             <!-- svelte-ignore a11y-click-events-have-key-events -->
             <div class="large-card" {style} on:click={() => selected = ''}>
                 <div class="large-header">
-                    <span class="large-name">{name}</span>
-                    <span class="large-cal">{calories} cal.</span>
-                    <!-- <img class="large-img" src="{type}" alt=""> -->
+                    <span class="name">{name}</span>
+                    <span class="cal">{calories} cal.</span>
+                    <img class="large-img" src="{src}" alt=""> 
                 </div>
-                <div class="footer">
+                <div class="large-footer">
+                    <h3>Ingredients:<br></h3>
                     {#each ingredients as { name, value, unit }}
-                        <div>{name}: {value} {unit}</div>
+                        <div class="ingredient">{name}: {value} {unit}</div>
+                    {/each}
+                    <h3>Steps:<br></h3>
+                    {#each steps.slice(0, 4) as step}
+                        <ul>
+                            <li><div class="steps">{step}</div></li>
+                        </ul>
                     {/each}
                 </div>
             </div>
@@ -121,35 +128,47 @@
         cursor: pointer
 
     .large-card
-        padding: 2em
+        padding-top: 2em
+        padding-left: 2.5em
+        padding-right: 5em
         flex-direction: column
-        width: $width * 3
+        width: $width * 2.9
         height: $width * 4
         cursor: pointer
 
 
     .large-header
-        padding-left: 2em
+        margin-right: 2em
         flex: 1
         display: flex
+        flex-direction: row
         align-items: center
         img, .cal
+            flex: 1
             padding-right: 0.25em
+            text-align: right
+            font-size: 1.8em
+            margin-top: -5em
         img
-            width: 2em
-    .large-name
-        font-size: 2.5em
-        margin-top: -3.7em
-        margin
+            width: 0.4em
+        .name
+            padding-left: 0.25em
+            font-size: 3em
+            margin-top: -3.7em
+            flex: 2
+            text-shadow: 0.2em 0.2em 0.4em #000000
+        
+    .large-footer
         flex: 2
-        text-shadow: 0.2em 0.2em 0.4em #000000
-    .large-cal
-        text-align: right
-        flex: 1
-        font-size: 2.5em
-        margin-top: -3.7em
-    .large-content
-        padding: 0 1em
+        padding-left: 1em
+        padding-right: 4em
+        padding-bottom: 16em
+        padding-top: 2em
+        display: flex
+        flex-direction: column
+        .ingredient
+
+        .steps
     
         
 </style>
