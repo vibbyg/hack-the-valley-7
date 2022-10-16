@@ -46,6 +46,7 @@
     function summon(n: number){
         $storage.currency -= 10 * n;
         pickedFood =  foodNames[Math.floor(Math.random() * foodNames.length)];
+        $storage.collection[pickedFood] = collection[pickedFood];
 
         isSummoning = true;
     }
@@ -88,7 +89,7 @@
     </div>
     <div id="summon">
         <div on:click={() => summon(1)}><span>Summon</span></div>
-        <div on:click={() => summon(10)}><span>Summon x10</span></div>
+        <!-- <div on:click={() => summon(10)}><span>Summon x10</span></div> -->
     </div>
 </section>
 {#if isSummoning}
