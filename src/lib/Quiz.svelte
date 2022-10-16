@@ -40,12 +40,15 @@
 </section>
 
 <style lang="sass">
+    :global(main > div)
+        height: 100vh
     section
         display: flex
+        flex: 1
         flex-direction: column
         align-items: center
+        justify-content: center
     #name
-        flex: 1
         font-weight: bold
         font-size: 2em
 
