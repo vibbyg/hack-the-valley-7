@@ -1341,7 +1341,103 @@ const recipes = [
 			"Puree yogurt with juice in a blender until smooth.",
 			"With the motor running, add fruit through the hole in the lid and continue to puree until smooth."	
 		]
-	}
+	},
+    {
+        name: "Greek Yogurt & Fresh Berries",
+		calories: 300,
+		nutrients: [
+			{
+				name: "Total Fat",
+				value: 3.7,
+				unit: "g"
+			},
+			{
+				name: "Saturated Fat",
+				value: 2.3,
+				unit: "g"
+			},
+			{
+				name: "Cholesterol",
+				value: 8,
+				unit: "mg"
+			},
+			{
+				name: "Sodium",
+				value: 52,
+				unit: "mg"
+			},
+			{
+				name: "Total Carbohydrate",
+				value: 44.9,
+				unit: "g"
+			},
+			{
+				name: "Dietary Fiber",
+				value: 4.7,
+				unit: "g"
+			},
+			{
+				name: "Total Sugars",
+				value: 37.5,
+				unit: "g"
+			},
+			{
+				name: "Protein",
+				value: 16.6,
+				unit: "g"
+			},
+			{
+				name: "Vitamin D",
+				value: 0,
+				unit: "mcg"
+			},
+			{
+				name: "Calcium",
+				value: 175,
+				unit: "mg"
+			},
+			{
+				name: "Iron",
+				value: 2,
+				unit: "mg"
+			},
+			{
+				name: "Potassium",
+				value: 497,
+				unit: "mg"
+			}
+		],
+        type: Type.Snack,
+		src: "/public/assets/recipe_images/11.png",
+        ingredients: [
+			{
+				name: "PC Greek Yogurt",
+				value: 0.75,
+				unit: "cup"
+			},
+            {
+				name: "blueberries",
+				value: 0.5,
+				unit: "cup"
+			},
+            {
+				name: "chopped strawberries",
+				value: 1,
+				unit: "cup"
+			},
+            {
+				name: "honey",
+				value: 1,
+				unit: "tbsp"
+			}
+        ],
+        steps: [
+            "Place 3/4 cup of yogurt in a bowl.",
+            "Wash and slice your berries, place on top of the yogurt.",
+            "Drizzle honey over top.",
+            "Enjoy as an amazing breakfast!"
+        ]
+    }
 ] as Recipe[];
 
 
