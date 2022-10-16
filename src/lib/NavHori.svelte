@@ -19,6 +19,7 @@
     nav
         display: flex
         height: $nav
+        z-index: 999
     nav > div
         display: flex
         justify-content: center
