@@ -1437,6 +1437,119 @@ const recipes = [
             "Drizzle honey over top.",
             "Enjoy as an amazing breakfast!"
         ]
+    },
+    {
+        name: "Peanut Butter Protein Shake",
+        calories: 483,
+		nutrients: [
+			{
+				name: "Total Fat",
+				value: 21.2,
+				unit: "g"
+			},
+			{
+				name: "Saturated Fat",
+				value: 3.8,
+				unit: "g"
+			},
+			{
+				name: "Cholesterol",
+				value: 0,
+				unit: "mg"
+			},
+			{
+				name: "Sodium",
+				value: 299,
+				unit: "mg"
+			},
+			{
+				name: "Total Carbohydrate",
+				value: 60.2,
+				unit: "g"
+			},
+			{
+				name: "Dietary Fiber",
+				value: 9.5,
+				unit: "g"
+			},
+			{
+				name: "Total Sugars",
+				value: 36.6,
+				unit: "g"
+			},
+			{
+				name: "Protein",
+				value: 19.7,
+				unit: "g"
+			},
+			{
+				name: "Vitamin D",
+				value: 100,
+				unit: "mcg"
+			},
+			{
+				name: "Calcium",
+				value: 370,
+				unit: "mg"
+			},
+			{
+				name: "Iron",
+				value: 6,
+				unit: "mg"
+			},
+			{
+				name: "Potassium",
+				value: 692,
+				unit: "mg"
+			}
+		],
+        type: Type.Snack,
+		src: "/public/assets/recipe_images/12.png",
+        ingredients: [
+			{
+				name: "Oat milk",
+				value: 1,
+				unit: "cup"
+			},
+            {
+				name: "banana",
+				value: 1,
+				unit: "u"
+			},
+            {
+				name: "creamy peanut butter",
+				value: 2,
+				unit: "tbsp"
+			},
+            {
+				name: "ground flax seeds",
+				value: 1,
+				unit: "tbsp"
+			},
+            {
+				name: "protein powder",
+				value: 1,
+				unit: "scoop"
+			},
+            {
+				name: "cinnamon",
+				value: 0.5,
+				unit: "tsp"
+			},
+            {
+				name: "ice cubes",
+				value: 5,
+				unit: "cubes"
+			}
+        ],
+        steps: [
+            "Add all ingredients to a blender. Add ice cubes, if using.",
+            "Mix everything on high speed until you get an even silky texture.",
+            "If the shake is too thick, add a little more liquid – milk or water. Blend again until everything is well combined.",
+            "Taste the shake and add additional sweetener if the shake is not sweet enough. I recommend using 1-2 soaked dates, date syrup, raw honey or maple syrup, stevia, or any low-carb sweetener. This is totally based on your preference.",
+            "Transfer the shake into a glass.",
+            "Add toppings: Be creative here and add toppings you like."
+        ]
     }
 ] as Recipe[];
 
