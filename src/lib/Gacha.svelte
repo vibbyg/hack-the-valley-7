@@ -50,6 +50,7 @@
         isSummoning = true;
     }
 
+    const style="background: url('assets/background.gif'); background-size: cover;"
 </script>
 <section class="{$$props.class}">
     <style> body{
@@ -89,7 +90,7 @@
     </div>
 </section>
 {#if isSummoning}
-    <div id="summon-screen">
+    <div id="summon-screen" {style}>
         <h1>Congratulations!</h1>
         <div id="card-area">
             <Card />
@@ -142,8 +143,6 @@
         flex-direction: column
         justify-content: center
         align-items: center
-        background: url('assets/background.gif')
-        background-size: cover
         overflow: hidden
         > button
             flex: 1
