@@ -1439,7 +1439,7 @@ const recipes = [
         ]
     },
     {
-        name: "Peanut Butter Shake",
+        name: "Protein Shake",
         calories: 483,
 		nutrients: [
 			{
