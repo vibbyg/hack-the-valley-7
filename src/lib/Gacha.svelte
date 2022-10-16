@@ -13,7 +13,7 @@
     const bannerList = bannerData.fullList;
     const banners: any[] = bannerData[$storage.option];
 
-    const names = Object.keys(collection);
+    const foodNames = Object.keys(collection);
 
     let selected = 0;
     let x = 0;
@@ -41,12 +41,12 @@
             change(1);
     }
 
-    // summon abount
-    let amount = 0;
+    let pickedFood: string;
 
     function summon(n: number){
-        amount = n;
         $storage.currency -= 10 * n;
+        pickedFood =  foodNames[Math.floor(Math.random() * foodNames.length)];
+
         isSummoning = true;
     }
 
@@ -92,12 +92,12 @@
     </div>
 </section>
 {#if isSummoning}
-    <div id="summon-screen" {style}>
+    <div id="summon-screen" {style} on:click="{() => isSummoning = false}">
         <h1>Congratulations!</h1>
         <div id="card-area">
-            <Card/>
+            <Card name="{pickedFood}" recipe="{collection[pickedFood]}" />
         </div>
-        <button on:click={() => isSummoning = false}>OK</button>
+        <div id="spacer"></div>
     </div>
 {/if}
 
@@ -146,9 +146,9 @@
         justify-content: center
         align-items: center
         overflow: hidden
-        > button
-            flex: 1
-
+        cursor: pointer
+    #spacer
+        flex: 1
     @keyframes summon
         from
             transform: scale(10)
@@ -157,7 +157,6 @@
     #card-area
         transform: scale(1.1)
         animation: 1s linear 0s summon
-        flex-grow: 1
     section
         display: flex
         flex: 1
