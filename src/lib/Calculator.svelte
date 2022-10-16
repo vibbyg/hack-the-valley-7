@@ -101,9 +101,11 @@
         border-radius: 10px
     div, span
         &:not(.unknown) > label
-            //box-shadow: $box
             &.selected
                 background: var(--theme)
-    //.unknown
-    //    box-shadow: $box
+    @media(orientation: portrait)
+        #result
+            flex-direction: column
+        section
+            font-size: 1rem
 </style>

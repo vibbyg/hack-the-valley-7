@@ -68,7 +68,7 @@
                 {#if i === selected}
                     <div class="banner" in:flyIn|local out:flyOut|local
                          on:click="{() => isInfoOpen = true}">
-                        <img class="glow" src="assets/gacha_glow.gif" alt="">
+                        <img class="glow" src="{`assets/gacha_glow_${$storage.option}.gif`}" alt="">
                         <img src="assets/banners/{bannerList[banner].img}"
                              alt="{bannerList[banner].name}"/>
                     </div>
