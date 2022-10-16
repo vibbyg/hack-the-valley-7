@@ -1,8 +1,14 @@
 <script lang="ts">
     import { info } from './info';
     import { storage } from './stores';
+
+    const style = [
+        `background: url('assets/info_${$storage.option}.svg');`,
+        `background-size: cover;`
+    ].join('');
 </script>
 
+<div {style} class="fixed"></div>
 <section>
     {#each Object.entries(info) as [k, { content, src }], i}
         <div class="row" class:rtl={i%2}>
@@ -16,6 +22,13 @@
 </section>
 
 <style lang="sass">
+    .fixed
+        position: fixed
+        width: 100vw
+        height: 100vh
+        top: 0
+        left: 0
+        z-index: -1
     @media (orientation: portrait)
         .row > div:not(.text)
             display: none
