@@ -2,9 +2,13 @@
     import { fly } from 'svelte/transition';
     import { sineInOut as ease } from 'svelte/easing';
 
+
+    import { storage } from './stores';
     import Modal from './Modal.svelte';
 
-    import banners from './banners.json';
+    import bannerData from './banners.json';
+    const bannerList = bannerData["fullList"];
+    const banners = bannerData[$storage.option];
 
     let selected = 0;
     let x = 0;
@@ -52,8 +56,8 @@
                 <div class="banner" in:flyIn|local out:flyOut|local
                     on:click="{showInfo}"
                 >
-                    <img src="assets/banners/{banner["img"]}"
-                        alt="{banner["name"]}"
+                    <img src="assets/banners/{bannerList[banner]["img"]}"
+                        alt="{bannerList[banner]["name"]}"
                     />
                 </div>
                 {/if}
@@ -69,8 +73,8 @@
         <div on:click={() => alert('Summon x10')}>Summon x10</div>
     </div>
 </section>
-<Modal title="{banners[selected]["name"]}" bind:isOpen="{infoOpen}">
-    {banners[selected]["descript"]}
+<Modal title="{bannerList[banners[selected]]["name"]}" bind:isOpen="{infoOpen}">
+    {bannerList[banners[selected]]["descript"]}
 </Modal>
 
 <style lang="sass">

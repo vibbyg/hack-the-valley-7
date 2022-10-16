@@ -49,6 +49,7 @@
         flex-direction: column
         align-items: center
         transition: height 250ms
+        z-index: 999
         img
             padding: 0.3em 0
         &:hover
