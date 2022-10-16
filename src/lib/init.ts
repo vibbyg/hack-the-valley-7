@@ -1,4 +1,5 @@
 import type { Recipe, Storage } from './storage';
+import { Option } from './storage';
 import recipes from './recipes.json';
 
 export const collection = recipes as { [name: string]: Recipe };
