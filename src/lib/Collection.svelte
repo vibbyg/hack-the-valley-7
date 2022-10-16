@@ -63,9 +63,6 @@
         display: grid
         gap: 1em
         grid-template-columns: repeat(auto-fill, minmax(18em, 1fr))
-    @media (orientation: portrait)
-        section
-            grid-template-columns: 1fr
     div
         display: flex
     .footer
@@ -130,8 +127,9 @@
             padding: 0
             width: 100vw
             height: $width / 3 * 4 + $pad
-            background: none !important
             font-size: 1rem
+        section
+            grid-template-columns: 1fr
 
     .large-header
         margin-right: 2em
