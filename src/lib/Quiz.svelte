@@ -19,8 +19,10 @@
     let value = '';
     $: if(!ings.has(value) && collection[name].ingredients[value]){
         $storage.progress[name].push(value);
+        $storage.currency += 1;
         // this recipe is completed
         if($storage.progress[name].length === Object.keys(collection[name].ingredients).length){
+            $storage.currency += 2;
             $storage.collection[name] = collection[name];
             delete $storage.progress[name];
         }

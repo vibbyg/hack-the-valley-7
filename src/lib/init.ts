@@ -1399,7 +1399,7 @@ export const init = {
     progress: Object.assign(
         {}, ...Object.entries(collection).filter(([k, _]) => !done[k]).map(
             ([name, { ingredients }]) => ({
-                [name]: Object.keys(ingredients).filter(i => i)
+                [name]: Object.keys(ingredients).filter(_ => 0 === (Math.random() * 7 | 0))
             })
         )
     ),
