@@ -69,5 +69,5 @@
         padding: $pad
         flex-direction: column
         width: $width
-        height: $width / 3 * 4 + $pad
+        height: calc($width / 3 * 4 + $pad)
 </style>

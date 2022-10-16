@@ -106,7 +106,7 @@
         padding: $pad
         flex-direction: column
         width: $width
-        height: $width / 3 * 4 + $pad
+        height: calc($width / 3 * 4 + $pad)
         cursor: pointer
 
     .large-card
@@ -126,7 +126,7 @@
         .large-card
             padding: 0
             width: 100vw
-            height: $width / 3 * 4 + $pad
+            height: calc($width / 3 * 4 + $pad)
             font-size: 1rem
         section
             grid-template-columns: 1fr
