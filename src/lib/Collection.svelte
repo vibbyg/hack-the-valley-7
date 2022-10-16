@@ -118,7 +118,11 @@
         cursor: pointer
     @media (orientation: portrait)
         .large-card
-            font-size: 0.5rem
+            padding: 0
+            width: 100vw
+            height: $width / 3 * 4 + $pad
+            background: none !important
+            font-size: 1rem
 
 
     .large-header
