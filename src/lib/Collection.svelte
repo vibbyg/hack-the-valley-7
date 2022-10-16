@@ -9,19 +9,19 @@
 </script>
 
 <section>
-    {#each $storage.collection as { name, calories, nutrients, type, src, ingredients, steps }}
+    {#each Object.entries($storage.collection) as [ name, recipe ]}
     {#if !selected }
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="card" {style} transition:blur="{{delay: 300, duration: 1000}}" on:click={() => selected = name}>
         <div class="header">
             <span class="name">{name}</span>
-            <span class="cal">{calories} cal.</span>
-            <img src="{type}" alt="">
+            <span class="cal">{recipe.calories} cal.</span>
+            <img src="{recipe.type}" alt="">
         </div>
-        <div class="photo"><img src="{src}" alt=""></div>
+        <div class="photo"><img src="{recipe.src}" alt=""></div>
         <div class="footer">
-            {#each nutrients.slice(3, 5) as { name, value, unit }}
-                <div>{name}: {value} {unit}<br></div>
+            {#each Object.entries(recipe.nutrients).slice(0, 3) as [ name, nutrients ]}
+                <div>{name}: {nutrients.value} {nutrients.unit}<br></div>
             {/each}
         </div>
     </div>
@@ -30,16 +30,16 @@
             <div class="large-card" {style} transition:blur="{{delay: 300, duration: 1000}}" on:click={() => selected = ''}>
                 <div class="large-header">
                     <span class="name">{name}</span>
-                    <span class="cal">{calories} cal.</span>
-                    <img class="large-img" src="{src}" alt=""> 
+                    <span class="cal">{recipe.calories} cal.</span>
+                    <img class="large-img" src="{recipe.src}" alt=""> 
                 </div>
                 <div class="large-footer">
                     <h3>Ingredients:<br></h3>
-                    {#each ingredients as { name, value, unit }}
-                        <div>{name}: {value} {unit}</div>
+                    {#each Object.entries(recipe.ingredients) as [ name, nutrients ]}
+                        <div>{name}: {nutrients.value} {nutrients.unit}</div>
                     {/each}
                     <h3>Steps:<br></h3>
-                    {#each steps.slice(0, 4) as step}
+                    {#each recipe.steps.slice(0, 4) as step}
                         <ul>
                             <li>{step}</li>
                         </ul>
