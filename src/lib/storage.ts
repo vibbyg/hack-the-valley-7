@@ -13,7 +13,7 @@ export enum Type{
 export interface Nutrient{
     name: string,
     value: number,
-    unit: string,
+    unit: string
 }
 
 export interface Recipe{

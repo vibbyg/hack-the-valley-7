@@ -3,6 +3,29 @@
 
     $: style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`;
     let selected = '';
+    // .large-card
+    //     padding: $pad
+    //     align-items: center
+    //     width: 30em
+    //     height: 30em / 3 * 4 + $pad
+    //     width: 100%
+    // .large-name
+    // .large-content
+    //     padding-left: 1em
+    //     flex: 1
+    //     display: flex
+    //     align-items: center
+    //     img, .cal
+    //         padding-right: 0.25em
+    //     img
+    //         width: 2em
+    //     .name
+    //         flex: 2
+    //         text-shadow: 0.2em 0.2em 0.4em #000000
+    //     .cal
+    //         text-align: right
+    //         flex: 1
+
 
 </script>
 
@@ -16,10 +39,10 @@
             <span class="cal">{calories} cal.</span>
             <img src="{type}" alt="">
         </div>
-        <div class="photo"></div>
+        <div class="photo"><img src="{src}" alt=""></div>
         <div class="footer">
-            {#each nutrients as { name, value, unit }}
-                <div>{name}: {value} {unit}</div>
+            {#each nutrients.slice(3, 5) as { name, value, unit }}
+                <div>{name}: {value} {unit}<br></div>
             {/each}
         </div>
     </div>
@@ -29,14 +52,11 @@
                 <div class="large-header">
                     <span class="large-name">{name}</span>
                     <span class="large-cal">{calories} cal.</span>
-                    <img src="{type}" alt="">
+                    <!-- <img class="large-img" src="{type}" alt=""> -->
                 </div>
-                <div class="large-content">
+                <div class="footer">
                     {#each ingredients as { name, value, unit }}
                         <div>{name}: {value} {unit}</div>
-                    {/each}
-                    {#each steps as step}
-                        {step}
                     {/each}
                 </div>
             </div>
@@ -79,12 +99,18 @@
             flex: 1
     .photo
         flex: 6
+        align-items: center
+        justify-content: center
+        img
+            object-fit: cover
+            width: auto
+            height: auto
+            max-width: 300px
+            max-height: 300px
     .footer
         flex: 2
         padding-top: 3em
         display: grid
-        grid-template-columns: 1fr 1fr
-
     $pad: 1em
     $width: 15em
     .card
@@ -92,9 +118,38 @@
         flex-direction: column
         width: $width
         height: $width / 3 * 4 + $pad
-    .large-card
-        justify-content: center
-        width: 100%
-    .large-name
+        cursor: pointer
 
+    .large-card
+        padding: 2em
+        flex-direction: column
+        width: $width * 3
+        height: $width * 4
+        cursor: pointer
+
+
+    .large-header
+        padding-left: 2em
+        flex: 1
+        display: flex
+        align-items: center
+        img, .cal
+            padding-right: 0.25em
+        img
+            width: 2em
+    .large-name
+        font-size: 2.5em
+        margin-top: -3.7em
+        margin
+        flex: 2
+        text-shadow: 0.2em 0.2em 0.4em #000000
+    .large-cal
+        text-align: right
+        flex: 1
+        font-size: 2.5em
+        margin-top: -3.7em
+    .large-content
+        padding: 0 1em
+    
+        
 </style>
