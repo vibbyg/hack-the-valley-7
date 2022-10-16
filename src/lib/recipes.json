@@ -63,7 +63,7 @@
         ],
         "calories": 953,
         "type": "Snack",
-        "src": "\u201cassets/recipe_images/1.png\u201d"
+        "src": "assets/recipe_images/1.png"
     },
     "Exotic Ginger Cumin Chicken ": {
         "nutrients": {
@@ -178,7 +178,7 @@
         ],
         "calories": 724,
         "type": "Meal",
-        "src": "\u201cassets/recipe_images/2.png\u201d"
+        "src": "assets/recipe_images/2.png"
     },
     "Fried Rice": {
         "nutrients": {
@@ -288,7 +288,7 @@
         ],
         "calories": 479,
         "type": "Meal",
-        "src": "\u201cassets/recipe_images/3.png\u201d"
+        "src": "assets/recipe_images/3.png"
     },
     "Mexican Meat Loaf ": {
         "nutrients": {
@@ -370,7 +370,7 @@
         ],
         "calories": 463,
         "type": "Meal",
-        "src": "\u201cassets/recipe_images/4.png\u201d"
+        "src": "assets/recipe_images/4.png"
     },
     "Ratatouille": {
         "nutrients": {
@@ -472,7 +472,7 @@
         ],
         "calories": 138,
         "type": "Snack",
-        "src": "\u201cassets/recipe_images/5.png\u201d"
+        "src": "assets/recipe_images/5.png"
     },
     "Devil Fruit Cake": {
         "nutrients": {
@@ -570,7 +570,7 @@
         ],
         "calories": 614,
         "type": "Snack",
-        "src": "\u201cassets/recipe_images/6.png\u201d"
+        "src": "assets/recipe_images/6.png"
     },
     "Ukrainian Borscht Soup": {
         "nutrients": {
@@ -690,7 +690,7 @@
         ],
         "calories": 263,
         "type": "Snack",
-        "src": "\u201cassets/recipe_images/7.png\u201d"
+        "src": "assets/recipe_images/7.png"
     },
     "Beef Jerky ": {
         "nutrients": {
@@ -784,7 +784,7 @@
         ],
         "calories": 226,
         "type": "Snack",
-        "src": "\u201cassets/recipe_images/8.png\u201d"
+        "src": "assets/recipe_images/8.png"
     },
     "Red Lentil Curry": {
         "nutrients": {
@@ -904,7 +904,7 @@
         ],
         "calories": 653,
         "type": "Meal",
-        "src": "\u201cassets/recipe_images/9.png\u201d"
+        "src": "assets/recipe_images/9.png"
     },
     "Fruit & Yogurt Smoothie": {
         "nutrients": {
@@ -978,6 +978,6 @@
         ],
         "calories": 293,
         "type": "Beverage",
-        "src": "\u201cassets/recipe_images/10.png\u201d"
+        "src": "assets/recipe_images/10.png"
     }
 }
