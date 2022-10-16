@@ -6,10 +6,8 @@
     function click({ target: { title } }: { target: HTMLElement }){
         console.debug('click on', title);
         selected = title;
-        hide = true;
     }
 
-    let hide = true;
     const pages = [
         { src: 'assets/gacha.png', title: 'Gacha' },
         { src: 'assets/collection.png', title: 'Collection' },
@@ -22,28 +20,22 @@
     <title>{selected}</title>
 </svelte:head>
 
-<span>
-<img id="toggle" class:hide src="assets/expand.svg" alt=""
-     on:click={() => hide=!hide}>
-</span>
-{#if !hide}
-    <nav transition:slide|local>
-        {#each pages as { src, title }}
-            <img {src} alt="{title}" {title} on:click={click}>
-        {/each}
-    </nav>
-{/if}
-
+<nav>
+    <span><img id="toggle" src="assets/expand.svg" alt=""/></span>
+    {#each pages as { src, title }}
+        <img {src} alt="{title}" {title} on:click={click}>
+    {/each}
+</nav>
 <style lang="sass">
     @use '../vars' as *
     span
-        position: fixed
-        top: 0
-        right: 0
         height: $nav
+        img
+            height: 100%
     #toggle
-        &:not(.hide)
-            transform: rotate(180deg)
+        transform: rotate(180deg)
+        &:hover
+            transform: rotate(0)
         transition: transform 500ms
 
     span, nav
@@ -51,13 +43,15 @@
     img
         width: $nav
     nav
+        height: $nav
+        &:hover
+            height: 100%
         position: fixed
-        top: $nav
         right: 0
         display: flex
-        height: 100%
         flex-direction: column
         align-items: center
+        transition: height 250ms
         img
             padding: 0.3em 0
 
