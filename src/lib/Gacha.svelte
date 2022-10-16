@@ -7,10 +7,11 @@
     import Modal from './Modal.svelte';
 
     import bannerData from './banners.json';
-    const bannerList = bannerData["fullList"];
+
+    const bannerList = bannerData['fullList'];
     const banners = bannerData[$storage.option];
 
-    const tmpSummonData = ["banana", "lemon", "cereal"];
+    const tmpSummonData = ['banana', 'lemon', 'cereal'];
 
     let selected = 0;
     let x = 0;
@@ -18,27 +19,27 @@
     let isInfoOpen = false;
     let isSummoning = false;
 
-    function change(num: number): void {
+    function change(num: number): void{
         x = 400 * num;
         selected = (selected + num + banners.length) % banners.length;
     }
 
-    function flyIn(node) {
-        return fly(node, {x, y: 50, easing: ease});
+    function flyIn(node){
+        return fly(node, { x, y: 50, easing: ease });
     }
 
-    function flyOut(node) {
-        return fly(node, {x: -x, y: 50, easing: ease});
+    function flyOut(node){
+        return fly(node, { x: -x, y: 50, easing: ease });
     }
 
-    function keypress(e: KeyboardEvent): void {
-        if (e.code === "ArrowLeft")
+    function keypress(e: KeyboardEvent): void{
+        if(e.code === 'ArrowLeft')
             change(-1);
-        else if (e.code === "ArrowRight")
+        else if(e.code === 'ArrowRight')
             change(1);
     }
 
-    function summon() {
+    function summon(){
         return tmpSummonData[Math.floor(Math.random() * tmpSummonData.length)];
     }
 </script>
@@ -56,13 +57,11 @@
         <div id="banners">
             {#each banners as banner, i}
                 {#if i === selected}
-                <div class="banner" in:flyIn|local out:flyOut|local
-                    on:click="{() => isInfoOpen = true}"
-                >
-                    <img src="assets/banners/{bannerList[banner]["img"]}"
-                        alt="{bannerList[banner]["name"]}"
-                    />
-                </div>
+                    <div class="banner" in:flyIn|local out:flyOut|local
+                         on:click="{() => isInfoOpen = true}">
+                    <img src="assets/banners/{bannerList[banner]['img']}"
+                         alt="{bannerList[banner]['name']}"/>
+                    </div>
                 {/if}
             {/each}
         </div>
@@ -70,9 +69,8 @@
              title="Next Banner">
             navigate_next
         </div>
-        <Modal title="{bannerList[banners[selected]]["name"]}"
-            bind:isOpen="{isInfoOpen}"
-        >
+        <Modal title="{bannerList[banners[selected]]['name']}"
+               bind:isOpen="{isInfoOpen}">
             {bannerList[banners[selected]]["descript"]}
         </Modal>
     </div>
@@ -82,16 +80,51 @@
     </div>
 </section>
 {#if isSummoning}
-<div id="summon-screen">
-    Summoned a {summon()}
-    <button on:click={() => isSummoning = false}>OK</button>
-</div>
+    <div id="summon-screen">
+        Summoned a {summon()}
+        <button on:click={() => isSummoning = false}>OK</button>
+    </div>
 {/if}
 
 <style lang="sass">
     @use 'sass:color'
     :global(main)
         height: 100%
+    #middle
+        flex: 20
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        &:focus
+            outline: none
+    #summon
+        display: flex
+        justify-content: center
+        align-items: center
+        background: var(--theme)
+        padding: 1em
+        z-index: 999
+        & > div
+            white-space: nowrap
+            margin: 0 5em
+            background-color: var(--theme)
+            filter: brightness(200%)
+            color: black
+            padding: 1em
+            border-radius: 10px
+            cursor: pointer
+    #summon-screen
+        z-index: 9999
+        position: absolute
+        width: 100vw
+        height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background: url('assets/background.gif')
+        background-size: cover
     section
         display: flex
         flex: 1
@@ -110,19 +143,12 @@
         cursor: pointer
     .banner > img
         width: 100%
-    #middle
-        flex: 20
-        display: flex
-        justify-content: center
-        align-items: center
-        position: relative
-    #middle:focus
-        outline: none
     .left, .right
         position: absolute
         color: var(--theme)
         font-size: 8em
         display: flex
+        z-index: 99
         justify-content: center
         align-items: center
         cursor: pointer
@@ -130,32 +156,6 @@
         left: 10px
     .right
         right: 10px
-    #summon
-        display: flex
-        justify-content: center
-        align-items: center
-        background: var(--theme)
-        padding: 1em
-        z-index: 999
-        & > div
-            white-space: nowrap
-            margin: 0 5em
-            background-color: var(--theme)
-            filter: brightness(200%)
-            color: black
-            padding: 1em
-            border-radius: 10px
-            cursor: pointer
-    #summon-screen
-        background-color: white
-        z-index: 9999
-        position: absolute
-        width: 100vw
-        height: 100vh
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
     @media(orientation: portrait)
         #summon > div
             margin: 0 1em
