@@ -1,5 +1,6 @@
 <script lang="ts">
     import { info } from './info';
+    import { storage } from './stores';
 </script>
 
 <section>
@@ -9,7 +10,7 @@
                 <div class="title">{k}</div>
                 <div class="content">{content}</div>
             </div>
-            <div><img src="{src||'assets/card_gain.svg'}"></div>
+            <div><img src="{src.replace('%s', $storage.option)}"></div>
         </div>
     {/each}
 </section>
@@ -21,6 +22,8 @@
     section
         width: 100%
         font-size: 2em
+    img
+        width: 100%
     .rtl
         direction: rtl
     .title
