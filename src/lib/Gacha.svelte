@@ -1,6 +1,7 @@
 <script lang="ts">
     import { fly } from 'svelte/transition';
     import { sineInOut as ease } from 'svelte/easing';
+    import { recipes } from './init';
 
     import { storage } from './stores';
     import Modal from './Modal.svelte';
@@ -10,7 +11,8 @@
     const bannerList = bannerData.fullList;
     const banners: any[] = bannerData[$storage.option];
 
-    const tmpSummonData = ['banana', 'lemon', 'cereal'];
+    // const tmpSummonData = ['banana', 'lemon', 'cereal'];
+    const names = recipes.map(({ name }) => name);
 
     let selected = 0;
     let x = 0;
@@ -38,9 +40,15 @@
             change(1);
     }
 
-    function summon(){
-        return tmpSummonData[Math.floor(Math.random() * tmpSummonData.length)];
+    // summon abount
+    let amount = 0;
+
+    function summon(n: number){
+        amount = n;
+        $storage.currency -= 10 * n;
+        isSummoning = true;
     }
+
 </script>
 <section class="{$$props.class}">
     <style> body{
@@ -75,13 +83,22 @@
         {/if}
     </div>
     <div id="summon">
-        <div on:click={() => isSummoning = true}><span>Summon</span></div>
-        <div on:click={() => alert('Summon x10')}><span>Summon x10</span></div>
+        <div on:click={() => summon(1)}><span>Summon</span></div>
+        <div on:click={() => summon(10)}><span>Summon x10</span></div>
     </div>
 </section>
 {#if isSummoning}
     <div id="summon-screen">
-        Summoned a {summon()}
+        {#if amount > 1}
+            Summoned
+            <ul>
+                {#each Array(amount) as _}
+                    <li> {names[Math.random() * names.length | 0]} </li>
+                {/each}
+            </ul>
+        {:else}
+            Summoned a {names[Math.random() * names.length | 0]}
+        {/if}
         <button on:click={() => isSummoning = false}>OK</button>
     </div>
 {/if}
@@ -125,6 +142,8 @@
         width: 100vw
         height: 100vh
         display: flex
+        font-size: 2em
+        color: white
         flex-direction: column
         justify-content: center
         align-items: center

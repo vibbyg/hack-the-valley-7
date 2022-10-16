@@ -1,7 +1,7 @@
 import type { Recipe, Storage } from './storage';
 import { Option, Type } from './storage';
 
-const recipes = [
+export const recipes = [
 	{
 		name: "Protein Pizza",
 		calories: 953,
@@ -1677,7 +1677,7 @@ const recipes = [
 export const init = {
     option: Option.None,
     collection: recipes,
-    concurrency: 420,
+    currency: 420,
 } as Storage;
 
 function vegetables(keeping: any, sliced: any, arg2: boolean, water: any, to: any, prevent: any, browning: any, until: any, ready: any, to1: any, use: any, then: any, drain: any) {

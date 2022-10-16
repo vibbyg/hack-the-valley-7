@@ -31,5 +31,5 @@ export interface Storage{
     option: Option;
     /// available recipes
     collection: Recipe[];
-    concurrency: number;
+    currency: number;
 }

@@ -9,7 +9,7 @@
 </script>
 
 <nav {style}>
-    <div id="currency">{$storage.concurrency} pts</div>
+    <div id="currency">{$storage.currency} pts</div>
     <div id="title" on:click={() => $storage.option = Option.None}>{title}</div>
     <div id="spacer"></div>
 </nav>
