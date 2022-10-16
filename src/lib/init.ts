@@ -39,7 +39,7 @@ export const collection = {
             }
         },
         type: Type.Snack,
-        src: '/public/assets/recipe_images/1.png',
+        src: 'assets/recipe_images/1.png',
         ingredients: {
             ['white rice flour']: {
                 value: 50,
@@ -139,7 +139,7 @@ export const collection = {
             }
         },
         type: Type.Meal,
-        src: '/public/assets/recipe_images/2.png',
+        src: 'assets/recipe_images/2.png',
         ingredients: {
             ['Vegetable Oil, divided']: {
                 value: 1,
@@ -251,7 +251,7 @@ export const collection = {
             }
         },
         type: Type.Meal,
-        src: '/public/assets/recipe_images/3.png',
+        src: 'assets/recipe_images/3.png',
         ingredients: {
             ['cooked and chilled white rice']: {
                 value: 4.5,
@@ -367,7 +367,7 @@ export const collection = {
             }
         },
         type: Type.Meal,
-        src: '/public/assets/recipe_images/4.png',
+        src: 'assets/recipe_images/4.png',
         ingredients: {
             ['Lean Ground Beef']: {
                 value: 1,
@@ -479,7 +479,7 @@ export const collection = {
             }
         },
         type: Type.Snack,
-        src: '/public/assets/recipe_images/5.png',
+        src: 'assets/recipe_images/5.png',
         ingredients: {
             ['Tomatoes']: {
                 value: 1.5,
@@ -594,7 +594,7 @@ export const collection = {
             }
         },
         type: Type.Snack,
-        src: '/public/assets/recipe_images/6.png',
+        src: 'assets/recipe_images/6.png',
         ingredients: {
             ['cake flour ']: {
                 value: 90,
@@ -707,7 +707,7 @@ export const collection = {
             }
         },
         type: Type.Snack,
-        src: '/public/assets/recipe_images/7.png',
+        src: 'assets/recipe_images/7.png',
         ingredients: {
             ['red beetroots']: {
                 value: 3,
@@ -826,7 +826,7 @@ export const collection = {
             }
         },
         type: Type.Snack,
-        src: '/public/assets/recipe_images/8.png',
+        src: 'assets/recipe_images/8.png',
         ingredients: {
             ['Salt']: {
                 value: 0.75,
@@ -940,7 +940,7 @@ export const collection = {
             }
         },
         type: Type.Meal,
-        src: '/public/assets/recipe_images/9.png',
+        src: 'assets/recipe_images/9.png',
         ingredients: {
             ['red lentils']: {
                 value: 2,
@@ -1053,7 +1053,7 @@ export const collection = {
             }
         },
         type: Type.Beverage,
-        src: '/public/assets/recipe_images/10.png',
+        src: 'assets/recipe_images/10.png',
         ingredients: {
             ['nonfat plain yogurt']: {
                 value: 0.75,
@@ -1163,7 +1163,7 @@ export const collection = {
             }
         },
         type: Type.Snack,
-        src: '/public/assets/recipe_images/11.png',
+        src: 'assets/recipe_images/11.png',
         ingredients: {
             ['PC Greek Yogurt']: {
                 value: 0.75,
@@ -1243,7 +1243,7 @@ export const collection = {
             }
         },
         type: Type.Snack,
-        src: '/public/assets/recipe_images/12.png',
+        src: 'assets/recipe_images/12.png',
         ingredients: {
             ['Oat milk']: {
                 value: 1,
@@ -1321,7 +1321,7 @@ export const collection = {
             }
         },
         type: Type.Meal,
-        src: '/public/assets/recipe_images/13.png',
+        src: 'assets/recipe_images/13.png',
         ingredients: {
             ['uncooked shrimp']: {
                 value: 2,
