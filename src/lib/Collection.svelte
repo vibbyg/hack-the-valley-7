@@ -107,12 +107,14 @@
 
     .large-card
         position: absolute
-        flex: 5
         padding-top: 2em
         padding-left: 2.5em
         display: inline-flex
         flex-direction: column
         align-items: stretch
+        left: 0
+        right: 0
+        margin: 0 auto
         width: $width * 2.9
         height: $width * 4
         cursor: pointer
