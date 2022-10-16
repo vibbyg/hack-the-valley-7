@@ -1,16 +1,20 @@
 <script lang="ts">
-    import { storage } from './stores';
+    import { key, storage } from './stores';
     import { Option } from './storage';
 
     export let title = 'Untitled';
 
-	let style = `background: url(assets/banner_${$storage.option}.png); background-size: cover;`;
-    let searchTerm = ''
+    let style = `background: url(assets/banner_${$storage.option}.png); background-size: cover;`;
+
+    function reset(){
+        localStorage.removeItem(key);
+        $storage.option = Option.None;
+    }
 </script>
 
 <nav {style}>
     <div id="currency">{$storage.currency} pts</div>
-    <div id="title" on:click={() => $storage.option = Option.None}>{title}</div>
+    <div id="title" on:click={reset}>{title}</div>
     <div id="spacer"></div>
 </nav>
 
