@@ -15,7 +15,7 @@
 <main class="{$storage.option}">
     <div>
         <NavHori
-                title="{selected === 'Calculator'?'Macros Calculator':selected}"/>;
+                title="{selected === 'Calculator'?'Macros Calculator':selected}"/>
         <svelte:component this="{pages[selected]}"/>
     </div>
     <NavVert bind:selected/>
