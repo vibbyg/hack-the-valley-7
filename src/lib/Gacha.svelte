@@ -75,8 +75,8 @@
         {/if}
     </div>
     <div id="summon">
-        <div on:click={() => isSummoning = true}>Summon</div>
-        <div on:click={() => alert('Summon x10')}>Summon x10</div>
+        <div on:click={() => isSummoning = true}><span>Summon</span></div>
+        <div on:click={() => alert('Summon x10')}><span>Summon x10</span></div>
     </div>
 </section>
 {#if isSummoning}
@@ -104,15 +104,21 @@
         align-items: center
         background: var(--theme)
         padding: 1em
+        flex-basis: 1em
+        //flex-grow: 1
         & > div
-            white-space: nowrap
-            margin: 0 5em
-            background-color: var(--theme)
-            filter: brightness(200%)
-            color: black
+            flex: 1
+            display: flex
+            justify-content: center
+        & > div > span
             padding: 1em
             border-radius: 10px
+            white-space: nowrap
+            color: black
             cursor: pointer
+            background-color: var(--theme)
+            filter: brightness(150%)
+
     #summon-screen
         z-index: 9999
         position: absolute
@@ -128,17 +134,18 @@
         display: flex
         flex: 1
         flex-direction: column
+    $size: 50vh
     .banner
         color: white
-        width: 20em
-        height: 20em
+        width: $size
+        height: $size
         background: var(--theme)
         display: flex
         justify-content: center
         align-items: center
         position: absolute
-        left: calc(50% - 10em)
-        top: calc(50% - 10em)
+        left: calc(50% - $size / 2)
+        top: calc(50% - $size / 2)
         cursor: pointer
     .banner > img
         width: 100%
@@ -147,7 +154,7 @@
         color: var(--theme)
         font-size: 8em
         display: flex
-        z-index: 99
+        z-index: 1
         justify-content: center
         align-items: center
         cursor: pointer
@@ -156,8 +163,6 @@
     .right
         right: 10px
     @media(orientation: portrait)
-        #summon > div
-            margin: 0 1em
         #middle
             position: relative
         .left, .right
