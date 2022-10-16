@@ -10,19 +10,18 @@ export enum Type{
     Snack = 'assets/snack.png',
 }
 
-export interface Nutrient{
-    name: string,
+export interface Nutrient {
+    [name: string]: any,
     value: number,
     unit: string
 }
 
 export interface Recipe{
-    name: string,
     calories: number,
-    nutrients: Nutrient[],
+    nutrients: {[name:string]: Nutrient},
     type: Type,
     src: string,
-    ingredients: Nutrient[],
+    ingredients: {[name:string]: Nutrient},
     steps: String[]
 }
 
@@ -30,6 +29,6 @@ export interface Storage{
     /// lose fat or gain weight
     option: Option;
     /// available recipes
-    collection: Recipe[];
+    collection: {[name:string]: Recipe};
     currency: number;
 }
