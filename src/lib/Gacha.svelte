@@ -44,7 +44,7 @@
     let pickedFood: string;
 
     function summon(n: number){
-        $storage.currency -= 10 * n;
+        $storage.currency = Math.max($storage.currency - 10 * n, 0);
         pickedFood = foodNames[Math.floor(Math.random() * foodNames.length)];
         $storage.collection[pickedFood] = collection[pickedFood];
 
