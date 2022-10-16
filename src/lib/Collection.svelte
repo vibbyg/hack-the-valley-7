@@ -1,5 +1,8 @@
 <script lang="ts">
     import { storage } from './stores';
+    import { blur } from "svelte/transition";
+    import { fly } from "svelte/transition";
+    import { quintOut } from "svelte/easing";
 
     $: style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`;
     let selected = '';
@@ -9,7 +12,7 @@
     {#each $storage.collection as { name, calories, nutrients, type, src, ingredients, steps }}
     {#if !selected }
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div class="card" {style} on:click={() => selected = name}>
+    <div class="card" {style} transition:blur="{{delay: 300, duration: 1000}}" on:click={() => selected = name}>
         <div class="header">
             <span class="name">{name}</span>
             <span class="cal">{calories} cal.</span>
@@ -24,7 +27,7 @@
     </div>
     {:else if selected === name }
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="large-card" id="box" {style} on:click={() => selected = ''}>
+            <div class="large-card" {style} transition:blur="{{delay: 300, duration: 1000}}" on:click={() => selected = ''}>
                 <div class="large-header">
                     <span class="name">{name}</span>
                     <span class="cal">{calories} cal.</span>
@@ -64,7 +67,7 @@
         padding: 0 1em
     .cal, .footer
         font-size: 0.9em
-        color: $background
+        color: $color
     .header
         padding-left: 1em
         flex: 1
@@ -76,6 +79,7 @@
             width: 2em
         .name
             flex: 2
+            color: white
             text-shadow: 0.2em 0.2em 0.4em #000000
         .cal
             text-align: right
@@ -104,7 +108,8 @@
         cursor: pointer
 
     .large-card
-        transition: width 2s
+        position: absolute
+        flex: 5
         padding-top: 2em
         padding-left: 2.5em
         display: inline-flex
@@ -123,22 +128,22 @@
         align-items: center
         img, .cal
             flex: 1
-            padding-right: 0.3em
+            padding-right: 0.2em
             padding-top: 0.2em
             text-align: right
             font-size: 1.8em
-            margin-top: -5em
         img
             width: 0.4em
+            padding-right: 0.4em
         .name
+            color: white
             padding-left: 0.25em
             font-size: 2.5em
-            margin-top: -4.2em
-            flex: 2
+            flex: 3
             text-shadow: 0.2em 0.2em 0.4em #000000
         
     .large-footer
-        flex: 2
+        flex: 6
         padding-left: 1em
         padding-right: 4em
         display: flex
