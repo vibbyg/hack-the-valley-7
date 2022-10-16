@@ -35,6 +35,8 @@
     #toggle
         transform: rotate(180deg)
         transition: transform 500ms
+    img:not(#toggle)
+        cursor: pointer
     span, nav
         background: var(--theme-nav)
     img
