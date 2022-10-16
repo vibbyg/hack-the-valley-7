@@ -20,6 +20,7 @@
 
     let isInfoOpen = false;
     let isSummoning = false;
+    let isCurrencyWarning = false;
 
     function change(num: number): void{
         x = 400 * num;
@@ -44,6 +45,10 @@
     let pickedFood: string;
 
     function summon(n: number){
+        if ($storage.currency < 10) {
+            isCurrencyWarning = true;
+            return;
+        }
         $storage.currency = Math.max($storage.currency - 10 * n, 0);
         pickedFood = foodNames[Math.floor(Math.random() * foodNames.length)];
         $storage.collection[pickedFood] = collection[pickedFood];
@@ -86,6 +91,13 @@
             <Modal title="{bannerList[banners[selected]].name}"
                    bind:isOpen="{isInfoOpen}">
                 {bannerList[banners[selected]].descript}
+            </Modal>
+        {/if}
+        {#if isCurrencyWarning}
+            <Modal title="Not enough currencies"
+                bind:isOpen="{isCurrencyWarning}"
+            >
+                You are broke and do not have enough currencies to summon!
             </Modal>
         {/if}
     </div>

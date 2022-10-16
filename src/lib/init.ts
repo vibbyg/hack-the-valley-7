@@ -14,7 +14,7 @@ const done = Object.assign(
 
 export const init = {
     option: Option.None,
-    collection: done,
+    collection: {},
     progress: Object.assign(
         {}, ...Object.entries(collection).filter(([k, _]) => !done[k]).map(
             ([name, { ingredients }]) => ({
