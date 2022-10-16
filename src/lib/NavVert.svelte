@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { slide } from 'svelte/transition';
+    import { storage } from './stores';
+    import { Option } from './storage';
 
     export let selected: string;
 
@@ -13,6 +14,7 @@
         { src: 'assets/collection.png', title: 'Collection' },
         { src: 'assets/calc.svg', title: 'Calculator' },
         { src: 'assets/info.png', title: 'Information' },
+        { src: `assets/quiz_${$storage.option}.svg`, title: 'Quiz' }
     ];
 </script>
 

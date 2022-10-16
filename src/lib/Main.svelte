@@ -6,9 +6,10 @@
     import Information from './Information.svelte';
     import { storage } from './stores';
     import NavHori from './NavHori.svelte';
+    import Quiz from './Quiz.svelte';
 
     let selected = 'Collection';
-    const pages = { Gacha, Collection, Calculator, Information };
+    const pages = { Gacha, Collection, Calculator, Information, Quiz };
 
 </script>
 <main class="{$storage.option}">
