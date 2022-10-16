@@ -1,0 +1,983 @@
+{
+    "Protein Pizza": {
+        "nutrients": {
+            "Sodium": {
+                "value": 1952.0,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 8.3,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 3.0,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 30.2,
+                "unit": "g"
+            },
+            "Calcium": {
+                "value": 64.0,
+                "unit": "mg"
+            },
+            "Iron": {
+                "value": 11.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 601.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "soy flour ": {
+                "value": 25.0,
+                "unit": "g"
+            },
+            "cold water": {
+                "value": 400.0,
+                "unit": "g"
+            },
+            "instant yeast": {
+                "value": 5.0,
+                "unit": "g"
+            },
+            "kosher salt": {
+                "value": 10.0,
+                "unit": "g"
+            },
+            "extra virgin olive oil": {
+                "value": 10.0,
+                "unit": "g"
+            }
+        },
+        "steps": [
+            "Transfer the dough to a lightly oiled container about 3-4 times the size of the dough.",
+            "Divide the dough into 5 equal pieces, 180 grams each. ",
+            "Preheat the oven to 500\u00b0F about 1 hour into the proofing process.",
+            "Once the dough is proofed, gently spread the dough into an oval shape about 11-12 inches long.  ",
+            "Transfer the shaped pinsa into a pizza peel and then, add the toppings of your choice.",
+            "Place the pinsa into the preheat oven and bake for 3-6 minutes or until crisp.",
+            "Let the pinsa cool slightly before slicing."
+        ],
+        "calories": 953,
+        "type": "Snack",
+        "src": "\u201cassets/recipe_images/1.png\u201d"
+    },
+    "Exotic Ginger Cumin Chicken ": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 7.8,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 273.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 452.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 18.4,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 3.4,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 12.7,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 93.7,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 0.0,
+                "unit": "mg"
+            },
+            "Calcium": {
+                "value": 198.0,
+                "unit": "mg"
+            },
+            "Iron": {
+                "value": 5.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 1492.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "Boneless Skinless Chicken, cut bite-size": {
+                "value": 2.0,
+                "unit": "lbs"
+            },
+            "Garlic, minced": {
+                "value": 2.0,
+                "unit": "tsp"
+            },
+            "cup Onion, chopped": {
+                "value": 0.5,
+                "unit": "cup"
+            },
+            "Ginger Root, minced": {
+                "value": 1.0,
+                "unit": "tbsp"
+            },
+            "Cayenne Pepper": {
+                "value": 0.5,
+                "unit": "tsp"
+            },
+            "Cumin": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "Turmeric": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "Chicken Stock": {
+                "value": 0.5,
+                "unit": "cup"
+            },
+            "Stewed Tomatoes": {
+                "value": 19.0,
+                "unit": "oz"
+            },
+            "Tomato Paste": {
+                "value": 2.0,
+                "unit": "tbsp"
+            },
+            "Sugar": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "Low Fat Plain Yogurt": {
+                "value": 0.75,
+                "unit": "cup"
+            }
+        },
+        "steps": [
+            "Add remaining oil to pan; add garlic, onion, and ginger. Reduce heat to medium and cook, stirring constantly for 5 minutes or until soft. Stir in cayenne, cumin, and turmeric; saute for 1 minute.",
+            "Stir in stock, tomatoes, tomato paste, and sugar; return chicken to pan. Bring to boil; reduce heat and simmer 5 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes.",
+            "Stir in yogurt and simmer 2 minutes."
+        ],
+        "calories": 724,
+        "type": "Meal",
+        "src": "\u201cassets/recipe_images/2.png\u201d"
+    },
+    "Fried Rice": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 2.4,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 60.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 686.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 87.9,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 2.6,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 1.2,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 13.6,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 5.0,
+                "unit": "mcg"
+            },
+            "Calcium": {
+                "value": 60.0,
+                "unit": "mg"
+            },
+            "Iron": {
+                "value": 5.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 237.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "Salt": {
+                "value": 10.0,
+                "unit": "g"
+            },
+            "Vegetable oil": {
+                "value": 1.0,
+                "unit": "tbsp"
+            },
+            "eggs, beaten": {
+                "value": 2.0,
+                "unit": "tbsp"
+            },
+            "Shrimp (or protein of your choice)": {
+                "value": 40.0,
+                "unit": "g"
+            },
+            "shiitake mushrooms, chopped": {
+                "value": 0.5,
+                "unit": "cup"
+            },
+            "frozen peas": {
+                "value": 0.5,
+                "unit": "cup"
+            },
+            "chopped ham": {
+                "value": 1.0,
+                "unit": "cup"
+            },
+            "cloves garlic, crushed": {
+                "value": 2.0,
+                "unit": "cup"
+            },
+            "oyster sauce": {
+                "value": 3.0,
+                "unit": "tbsp"
+            },
+            "soy sauce": {
+                "value": 3.0,
+                "unit": "tbsp"
+            },
+            "butter": {
+                "value": 1.0,
+                "unit": "tbsp"
+            }
+        },
+        "steps": [
+            "Preheat a wide non-stick pan over medium high heat and add some vegetable oil along with 2 beaten eggs. ",
+            "Wipe out pan, add more oil, and then add the shrimp (or the protein of your choice). Once cooked, set aside in the bowl with the eggs.",
+            "Add 2 cloves of crushed garlic and cook for about 30 seconds before adding 4 cups of cooked white rice. ",
+            "Turn the heat to high and let the whole thing saute. Break up any big chunks of rice and cook for about 3-5 minutes.",
+            "Add your eggs and protein back into the mix and top with some sesame oil and thinly sliced scallions. ",
+            "Reduce the heat to low and add some sesame seeds. Mix to combine.",
+            "Finish it off by adding 1 Tbsp of butter and mixing that to combine.",
+            "Finish it off by adding 1 Tbsp of butter and mixing that to combine.",
+            "Finish it off by adding 1 Tbsp of butter and mixing that to combine.",
+            "Finish it off by adding 1 Tbsp of butter and mixing that to combine.",
+            "Finish it off by adding 1 Tbsp of butter and mixing that to combine."
+        ],
+        "calories": 479,
+        "type": "Meal",
+        "src": "\u201cassets/recipe_images/3.png\u201d"
+    },
+    "Mexican Meat Loaf ": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 3.1,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 101.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 569.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 47.7,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 9.6,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 4.5,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 48.3,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 0.0,
+                "unit": "mcg"
+            },
+            "Calcium ": {
+                "value": 103.0,
+                "unit": "mg"
+            },
+            "Iron": {
+                "value": 25.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 1448.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "Black Beans (canned), rinsed and drained": {
+                "value": 1.0,
+                "unit": "cup"
+            },
+            "Salsa, divided": {
+                "value": 1.0,
+                "unit": "cup"
+            },
+            "Corn (frozen)": {
+                "value": 0.5,
+                "unit": "cup"
+            },
+            "Bread Crumbs": {
+                "value": 0.5,
+                "unit": "cup"
+            }
+        },
+        "steps": [
+            "Spray a loaf pan (approx. 5\"x9\"), and add above mix.",
+            "Bake for 50 to 60 minutes - sit 15 minutes.",
+            "Top with last 1/4 cup of salsa.",
+            "Top with last 1/4 cup of salsa.",
+            "Top with last 1/4 cup of salsa.",
+            "Top with last 1/4 cup of salsa.",
+            "Top with last 1/4 cup of salsa.",
+            "Top with last 1/4 cup of salsa.",
+            "Top with last 1/4 cup of salsa.",
+            "Top with last 1/4 cup of salsa.",
+            "Top with last 1/4 cup of salsa."
+        ],
+        "calories": 463,
+        "type": "Meal",
+        "src": "\u201cassets/recipe_images/4.png\u201d"
+    },
+    "Ratatouille": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 0.7,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 0.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 60.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 19.9,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 7.7,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 10.8,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 5.9,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 0.0,
+                "unit": "mcg"
+            },
+            "Calcium": {
+                "value": 47.0,
+                "unit": "mg"
+            },
+            "Iron": {
+                "value": 1.0,
+                "unit": "mg"
+            },
+            "Potassium ": {
+                "value": 715.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "Eggplant": {
+                "value": 0.5,
+                "unit": "lbs"
+            },
+            "Zucchini": {
+                "value": 1.0,
+                "unit": "lbs"
+            },
+            "Bell Peppers": {
+                "value": 3.0,
+                "unit": "lbs"
+            },
+            "Onions": {
+                "value": 2.0,
+                "unit": "lbs"
+            },
+            "Cloves of Garlic": {
+                "value": 6.0,
+                "unit": "lbs"
+            },
+            "Basil, Thyme, Parsley": {
+                "value": 6.0,
+                "unit": "lbs"
+            },
+            "Olive Oil": {
+                "value": 1.0,
+                "unit": "tbsp"
+            },
+            "Salt and pepper": {
+                "value": 10.0,
+                "unit": "g"
+            },
+            "Tomato Paste": {
+                "value": 140.0,
+                "unit": "g"
+            }
+        },
+        "steps": [
+            "Chop the onion and garlic. Clean the bell pepper, cut into small strips.",
+            "In a large cooking pot with thick bottom, put in olive oil, onions, and chopped garlic. Add in the bell pepper. Cover to keep in the moisture.",
+            "Add the tomatoes and Herbes de Provence. If you don\u2019t have good garden tomatoes with flavour, add a small can of tomato paste. ",
+            "Cut the eggplant into disks. Cut zucchini into disks.",
+            "Add the eggplant and zucchini to the pot.",
+            "Cook for about 30 minutes.",
+            "Cook for about 30 minutes.",
+            "Cook for about 30 minutes.",
+            "Cook for about 30 minutes.",
+            "Cook for about 30 minutes.",
+            "Cook for about 30 minutes."
+        ],
+        "calories": 138,
+        "type": "Snack",
+        "src": "\u201cassets/recipe_images/5.png\u201d"
+    },
+    "Devil Fruit Cake": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 1.4,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 105.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 129.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 132.5,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 0.5,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 77.8,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 5.8,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 9.0,
+                "unit": "mcg"
+            },
+            "Calcium": {
+                "value": 24.0,
+                "unit": "mg"
+            },
+            "Iron": {
+                "value": 1.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 59.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "egg whites ": {
+                "value": 90.0,
+                "unit": "g"
+            },
+            "granulated sugar": {
+                "value": 90.0,
+                "unit": "g"
+            },
+            "eggs yolks": {
+                "value": 3.0,
+                "unit": "g"
+            },
+            "milk ": {
+                "value": 30.0,
+                "unit": "g"
+            },
+            "sunflower seed oil": {
+                "value": 25.0,
+                "unit": "g"
+            },
+            "green tea extract": {
+                "value": 0.25,
+                "unit": "tsp"
+            },
+            "marshmallow fondant ": {
+                "value": 800.0,
+                "unit": "g"
+            },
+            "purple and green food color": {
+                "value": 5.0,
+                "unit": "g"
+            }
+        },
+        "steps": [
+            "Add flour for elegance, 30g milk, 25g sunflower oil, 1/4 tsp green tea extract.",
+            "Mix in the cake thoroughly.",
+            "Bake for 35 to 40 min at 150\u00b0C degrees",
+            "Trim the cake, and cover with marshmallow fondant.",
+            "Trim the cake, and cover with marshmallow fondant.",
+            "Trim the cake, and cover with marshmallow fondant.",
+            "Trim the cake, and cover with marshmallow fondant.",
+            "Trim the cake, and cover with marshmallow fondant.",
+            "Trim the cake, and cover with marshmallow fondant.",
+            "Trim the cake, and cover with marshmallow fondant.",
+            "Trim the cake, and cover with marshmallow fondant."
+        ],
+        "calories": 614,
+        "type": "Snack",
+        "src": "\u201cassets/recipe_images/6.png\u201d"
+    },
+    "Ukrainian Borscht Soup": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 4.2,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 10.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 695.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 29.8,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 5.3,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 5.8,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 11.4,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 0.0,
+                "unit": "mcg"
+            },
+            "Calcium": {
+                "value": 109.0,
+                "unit": "mcg"
+            },
+            "Iron": {
+                "value": 3.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 986.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "extra virgin olive oil": {
+                "value": 4.0,
+                "unit": "tbsp"
+            },
+            "chicken broth": {
+                "value": 8.0,
+                "unit": "cups"
+            },
+            "water": {
+                "value": 2.0,
+                "unit": "cups"
+            },
+            "potatoes": {
+                "value": 3.0,
+                "unit": "cups"
+            },
+            "carrots": {
+                "value": 2.0,
+                "unit": "cups"
+            },
+            "celery ribs": {
+                "value": 2.0,
+                "unit": "cups"
+            },
+            "onion": {
+                "value": 1.0,
+                "unit": "cups"
+            },
+            "tomato sauce": {
+                "value": 3.0,
+                "unit": "tbsp"
+            },
+            "red bell pepper": {
+                "value": 1.0,
+                "unit": "tbsp"
+            },
+            "white cannelini beans with their juice": {
+                "value": 1.0,
+                "unit": "can"
+            },
+            "bay leaves": {
+                "value": 2.0,
+                "unit": "can"
+            },
+            "pressed garlic clove": {
+                "value": 1.0,
+                "unit": "can"
+            },
+            "sour cream": {
+                "value": 1.0,
+                "unit": "cup"
+            }
+        },
+        "steps": [
+            "Heat a large soup pot (5 1/2 Qt or larger) over medium/high heat and add 2 Tbsp olive oil.",
+            "Add grated beets and saut\u00e9 10 minutes, stirring occasionally until beets are softened.",
+            "Add 8 cups broth and 2 cups water.",
+            "Add sliced potatoes and sliced carrots then cook for 10-15 minutes or until easily pierced with a fork.",
+            "While potatoes are cooking, place a large skillet over medium/high heat and add 2 Tbsp oil.",
+            "Add chopped onion, celery and bell pepper. Saute stirring occasionally until softened and lightly golden (7-8 minutes).",
+            "Add 4 Tbsp Ketchup and stir fry for 30 seconds then transfer to the soup pot to continue cooking with the potatoes.",
+            "When potatoes and carrots reach desired softness, add optional ingredients from the list.",
+            "Simmer for an additional 2-3 minutes and add more spices to taste.",
+            "Serve with a dollop of sour cream on top.",
+            "Serve with a dollop of sour cream on top.",
+            "Serve with a dollop of sour cream on top.",
+            "Serve with a dollop of sour cream on top."
+        ],
+        "calories": 263,
+        "type": "Snack",
+        "src": "\u201cassets/recipe_images/7.png\u201d"
+    },
+    "Beef Jerky ": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 2.7,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 101.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 858.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 3.8,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 0.0,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 3.5,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 34.7,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 0.0,
+                "unit": "mcg"
+            },
+            "Calcium": {
+                "value": 7.0,
+                "unit": "mcg"
+            },
+            "Iron": {
+                "value": 21.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 479.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "pepper": {
+                "value": 0.25,
+                "unit": "tsp"
+            },
+            "brown sugar": {
+                "value": 1.0,
+                "unit": "tbsp"
+            },
+            "garlic": {
+                "value": 0.25,
+                "unit": "tsp"
+            },
+            "Teriyaki sauce": {
+                "value": 2.0,
+                "unit": "tbsp"
+            },
+            "Liquid Smoke": {
+                "value": 0.25,
+                "unit": "tsp"
+            },
+            "beef (flank or skirt steak is ideal)": {
+                "value": 450.0,
+                "unit": "g"
+            },
+            "cheese powder": {
+                "value": 0.25,
+                "unit": "tsp"
+            }
+        },
+        "steps": [
+            "Mix all ingredients except beef to make brine.",
+            "Slice beef into \u00bc\" (\u00bd cm) thick strips. Small chunks, about \u00be\" (2 cm), of stewing beef may also be used. If possible, cut along the grain of the meat rather than across it. It may be easier to freeze the meat before attempting to cut it, as this will stop the meat pulling and deforming so easily.",
+            "Marinate meat in overnight, or at least for an hour or two.",
+            "Place meat on racks and dry in a food dehydrator at 145 \u00b0F (63 \u00b0C) for 6-8 hours. May be dried in a 150 \u00b0F (65 \u00b0C) oven with foil-covered racks. In oven, turn meat over 3-4 hours into drying time and reduce temperature to 130 \u00b0F (55 \u00b0C).",
+            "Meat should bend but not break when properly dried.",
+            "Meat should bend but not break when properly dried.",
+            "Meat should bend but not break when properly dried.",
+            "Meat should bend but not break when properly dried.",
+            "Meat should bend but not break when properly dried.",
+            "Meat should bend but not break when properly dried.",
+            "Meat should bend but not break when properly dried."
+        ],
+        "calories": 226,
+        "type": "Snack",
+        "src": "\u201cassets/recipe_images/8.png\u201d"
+    },
+    "Red Lentil Curry": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 1.3,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 0.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 841.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 101.0,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 44.0,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 12.7,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 37.0,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 0.0,
+                "unit": "mcg"
+            },
+            "Calcium": {
+                "value": 138.0,
+                "unit": "mg"
+            },
+            "Iron": {
+                "value": 14.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 1981.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "water, or more as needed": {
+                "value": 3.0,
+                "unit": "cup"
+            },
+            "Vegetable oil": {
+                "value": 1.0,
+                "unit": "tbsp"
+            },
+            "large onion, diced": {
+                "value": 1.0,
+                "unit": "tbsp"
+            },
+            "curry paste": {
+                "value": 2.0,
+                "unit": "tbsp"
+            },
+            "curry powder": {
+                "value": 1.0,
+                "unit": "tbsp"
+            },
+            "ground turmeric": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "ground cumin": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "chili powder": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "Salt": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "white sugar": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "minced garlic": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "minced fresh ginger": {
+                "value": 1.0,
+                "unit": "tsp"
+            },
+            "tomato puree": {
+                "value": 14.25,
+                "unit": "oz"
+            }
+        },
+        "steps": [
+            "Put lentils in a pot with enough water to cover; bring to a boil and reduce heat to medium-low. Cover and simmer, adding water as needed to keep lentils covered, until tender, 15 to 20 minutes. Drain. ",
+            "Heat vegetable oil in a large skillet over medium heat; cook and stir onions in hot oil until caramelized, about 20 minutes. ",
+            "Mix together curry paste, curry powder, turmeric, cumin, chili powder, salt, sugar, garlic, and ginger in a large bowl; stir into onions. Increase heat to high and cook, stirring constantly, until fragrant, 1 to 2 minutes. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. ",
+            "Stir in tomato puree and lentils; cook until warmed through. "
+        ],
+        "calories": 653,
+        "type": "Meal",
+        "src": "\u201cassets/recipe_images/9.png\u201d"
+    },
+    "Fruit & Yogurt Smoothie": {
+        "nutrients": {
+            "Saturated Fat": {
+                "value": 1.9,
+                "unit": "g"
+            },
+            "Cholesterol": {
+                "value": 11.0,
+                "unit": "mg"
+            },
+            "Sodium": {
+                "value": 136.0,
+                "unit": "mg"
+            },
+            "Total Carbohydrate": {
+                "value": 51.8,
+                "unit": "g"
+            },
+            "Dietary Fiber": {
+                "value": 3.7,
+                "unit": "g"
+            },
+            "Total Sugars": {
+                "value": 51.5,
+                "unit": "g"
+            },
+            "Protein": {
+                "value": 13.4,
+                "unit": "g"
+            },
+            "Vitamin D": {
+                "value": 0.0,
+                "unit": "mcg"
+            },
+            "Calcium": {
+                "value": 341.0,
+                "unit": "mg"
+            },
+            "Iron": {
+                "value": 1.0,
+                "unit": "mg"
+            },
+            "Potassium": {
+                "value": 1201.0,
+                "unit": "mg"
+            }
+        },
+        "ingredients": {
+            "100% pure fruit juice": {
+                "value": 0.5,
+                "unit": "cup"
+            },
+            "frozen fruit, such as blueberries, raspberries, pineapple or peaches": {
+                "value": 0.5,
+                "unit": "cup"
+            }
+        },
+        "steps": [
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth.",
+            "With the motor running, add fruit through the hole in the lid and continue to puree until smooth."
+        ],
+        "calories": 293,
+        "type": "Beverage",
+        "src": "\u201cassets/recipe_images/10.png\u201d"
+    }
+}
