@@ -45,7 +45,7 @@
 
     function summon(n: number){
         $storage.currency -= 10 * n;
-        pickedFood =  foodNames[Math.floor(Math.random() * foodNames.length)];
+        pickedFood = foodNames[Math.floor(Math.random() * foodNames.length)];
         $storage.collection[pickedFood] = collection[pickedFood];
 
         isSummoning = true;
@@ -69,7 +69,9 @@
                 {#if i === selected}
                     <div class="banner" in:flyIn|local out:flyOut|local
                          on:click="{() => isInfoOpen = true}">
-                        <img class="glow" src="{`assets/gacha_glow_${$storage.option}.gif`}" alt="">
+                        <img class="glow"
+                             src="{`assets/gacha_glow_${$storage.option}.gif`}"
+                             alt="">
                         <img src="assets/banners/{bannerList[banner].img}"
                              alt="{bannerList[banner].name}"/>
                     </div>
@@ -96,7 +98,7 @@
     <div id="summon-screen" {style} on:click="{() => isSummoning = false}">
         <h1>Congratulations!</h1>
         <div id="card-area">
-            <Card name="{pickedFood}" recipe="{collection[pickedFood]}" />
+            <Card name="{pickedFood}" recipe="{collection[pickedFood]}"/>
         </div>
         <div id="spacer"></div>
     </div>
@@ -167,14 +169,15 @@
         color: white
         width: $size
         height: $size
+        left: calc(50% - $size / 2)
+        top: calc(50% - $size / 2)
         background: var(--theme)
         display: flex
         justify-content: center
         align-items: center
         position: absolute
-        left: calc(50% - $size / 2)
-        top: calc(50% - $size / 2)
         cursor: pointer
+
     .banner > img
         position: absolute
         width: 100%
@@ -199,4 +202,14 @@
             position: relative
         .left, .right
             bottom: 0
+        $size: calc($size * 0.75)
+        .banner
+            width: $size
+            height: $size
+            left: calc(50% - $size / 2)
+            top: calc(40% - $size / 2)
+        #summon-screen
+            font-size: 1em
+        #card-area
+            transform: scale(0.9)
 </style>
