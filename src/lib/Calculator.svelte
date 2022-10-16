@@ -18,11 +18,11 @@
         [Option.GainWeight]: 500,
     }[$storage.option];
     $: intake = maintainence ? ({
-        Caloric: bonus,
+        Caloric: bonus* gender,
         Protein: weight * unit * 0.8 * gender,
-        Carbohydrates: bonus / 2000 * 35,
-        Fats: bonus / 2000 * 62,
-        Fibre: bonus / 2000 * 32,
+        Carbohydrates: bonus / 2000 * 35* gender,
+        Fats: bonus / 2000 * 62* gender,
+        Fibre: bonus / 2000 * 32* gender,
     }) : ({ Caloric: 0, Protein: 0, Carbohydrates: 0, Fats: 0, Fibre: 0 });
 </script>
 
