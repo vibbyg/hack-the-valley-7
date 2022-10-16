@@ -2,14 +2,13 @@
     import { fly } from 'svelte/transition';
     import { sineInOut as ease } from 'svelte/easing';
 
-
     import { storage } from './stores';
     import Modal from './Modal.svelte';
 
     import bannerData from './banners.json';
 
-    const bannerList = bannerData['fullList'];
-    const banners = bannerData[$storage.option];
+    const bannerList = bannerData.fullList;
+    const banners: any[] = bannerData[$storage.option];
 
     const tmpSummonData = ['banana', 'lemon', 'cereal'];
 
@@ -44,10 +43,9 @@
     }
 </script>
 <section class="{$$props.class}">
-    <style>
-        body{
-            height: 100vh
-        }
+    <style> body{
+        height: 100vh
+    }
     </style>
     <div id="middle" tabindex="0" on:keydown="{keypress}">
         <div class="left material-icons-round" on:click="{() => change(-1)}"
@@ -59,8 +57,8 @@
                 {#if i === selected}
                     <div class="banner" in:flyIn|local out:flyOut|local
                          on:click="{() => isInfoOpen = true}">
-                    <img src="assets/banners/{bannerList[banner]['img']}"
-                         alt="{bannerList[banner]['name']}"/>
+                        <img src="assets/banners/{bannerList[banner].img}"
+                             alt="{bannerList[banner].name}"/>
                     </div>
                 {/if}
             {/each}
@@ -69,10 +67,12 @@
              title="Next Banner">
             navigate_next
         </div>
-        <Modal title="{bannerList[banners[selected]]['name']}"
-               bind:isOpen="{isInfoOpen}">
-            {bannerList[banners[selected]]["descript"]}
-        </Modal>
+        {#if isInfoOpen}
+            <Modal title="{bannerList[banners[selected]].name}"
+                   bind:isOpen="{isInfoOpen}">
+                {bannerList[banners[selected]].descript}
+            </Modal>
+        {/if}
     </div>
     <div id="summon">
         <div on:click={() => isSummoning = true}>Summon</div>
@@ -104,7 +104,6 @@
         align-items: center
         background: var(--theme)
         padding: 1em
-        z-index: 999
         & > div
             white-space: nowrap
             margin: 0 5em
