@@ -8,7 +8,7 @@
     import NavHori from './NavHori.svelte';
     import Quiz from './Quiz.svelte';
 
-    let selected = 'Calculator';
+    let selected = 'Quiz';
     const pages = { Gacha, Calculator, Collection, Information, Quiz };
 
 </script>

@@ -2,6 +2,7 @@
     import { collection } from './init';
     import type { Recipe } from './storage';
     import { storage } from './stores';
+    import Background from './Background.svelte';
 
     function random(){
         const keys = Object.keys($storage.progress);
@@ -29,6 +30,7 @@
         [name, ingredients] = random();
     }
 </script>
+<Background prefix="q_" ext="png"/>
 <section>
     <div id="name">{name}</div>
     <ul>
@@ -40,10 +42,16 @@
 </section>
 
 <style lang="sass">
+    @use 'sass:color'
     :global(main > div)
         height: 100vh
     section
         display: flex
+        width: 60vw
+        margin: 0 auto
+        background: var(--help)
+        border: 2em solid var(--theme)
+        border-radius: 2em
         flex: 1
         flex-direction: column
         align-items: center

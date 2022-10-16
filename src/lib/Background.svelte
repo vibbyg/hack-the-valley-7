@@ -5,7 +5,9 @@
     export let ext: string;
     const style = [
         `background: url('assets/${prefix}${$storage.option}.${ext}');`,
-        `background-size: cover;`
+        `background-size: cover;`,
+        `background-repeat: no-repeat;`,
+        `background-position: center center;`
     ].join('');
 </script>
 <div {style}></div>
