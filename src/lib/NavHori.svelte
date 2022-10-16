@@ -19,12 +19,13 @@
     nav
         display: flex
         height: $nav
+        font-size: 2em
         z-index: 999
     nav > div
         display: flex
         justify-content: center
         align-items: center
-        margin: 0.5em
+        margin: 0.2em
     #currency
         flex: 2
         background-color: $background
@@ -33,6 +34,7 @@
         white-space: nowrap
     #title
         color: white
+        font-weight: bold
         flex: 7
     #spacer
         flex: 2

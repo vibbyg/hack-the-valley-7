@@ -9,7 +9,7 @@
     import Quiz from './Quiz.svelte';
 
     let selected = 'Collection';
-    const pages = { Gacha, Collection, Calculator, Information, Quiz };
+    const pages = { Gacha, Calculator,Collection, Information, Quiz };
 
 </script>
 <main class="{$storage.option}">

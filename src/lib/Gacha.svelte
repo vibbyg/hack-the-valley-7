@@ -12,7 +12,6 @@
     const bannerList = bannerData.fullList;
     const banners: any[] = bannerData[$storage.option];
 
-    // const tmpSummonData = ['banana', 'lemon', 'cereal'];
     const names = Object.keys(collection);
 
     let selected = 0;
@@ -50,8 +49,13 @@
         isSummoning = true;
     }
 
-    const style="background: url('assets/background.gif'); background-size: cover;"
+    const win = 'background: url(\'assets/background.gif\'); background-size: cover;';
+    const style = [
+        `background: url('assets/gacha_${$storage.option}.png');`,
+        `background-size: cover;`
+    ].join('');
 </script>
+<div class="fixed" {style}></div>
 <section class="{$$props.class}">
     <style> body{
         height: 100vh
@@ -90,10 +94,10 @@
     </div>
 </section>
 {#if isSummoning}
-    <div id="summon-screen" {style}>
+    <div id="summon-screen" style={win}>
         <h1>Congratulations!</h1>
         <div id="card-area">
-            <Card />
+            <Card/>
         </div>
         <button on:click={() => isSummoning = false}>OK</button>
     </div>
@@ -178,6 +182,7 @@
     .left, .right
         position: absolute
         color: var(--theme)
+        filter: brightness(150%)
         font-size: 8em
         display: flex
         z-index: 1
