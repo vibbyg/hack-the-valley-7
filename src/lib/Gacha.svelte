@@ -8,6 +8,7 @@
     import Card from './Card.svelte';
 
     import bannerData from './banners.json';
+    import Background from './Background.svelte';
 
     const bannerList = bannerData.fullList;
     const banners: any[] = bannerData[$storage.option];
@@ -49,13 +50,9 @@
         isSummoning = true;
     }
 
-    const win = 'background: url(\'assets/background.gif\'); background-size: cover;';
-    const style = [
-        `background: url('assets/gacha_${$storage.option}.png');`,
-        `background-size: cover;`
-    ].join('');
+    const style = 'background: url(\'assets/background.gif\'); background-size: cover;';
 </script>
-<div class="fixed" {style}></div>
+<Background prefix="gacha_" ext="png"/>
 <section class="{$$props.class}">
     <style> body{
         height: 100vh
@@ -94,7 +91,7 @@
     </div>
 </section>
 {#if isSummoning}
-    <div id="summon-screen" style={win}>
+    <div id="summon-screen" {style}>
         <h1>Congratulations!</h1>
         <div id="card-area">
             <Card/>

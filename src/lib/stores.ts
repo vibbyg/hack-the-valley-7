@@ -9,6 +9,10 @@ export const key = 'fit';
 const option = JSON.parse(localStorage.getItem(key) || '{}').option;
 const local = option ? { ...init, option } : init;
 
+export function bg(prefix: string, { option }: Storage, ext: string): string{
+    return
+}
+
 // prod use
 // const local = ((s: Storage) => ({
 //     ...s, ...JSON.parse(localStorage.getItem(key) || '{}')

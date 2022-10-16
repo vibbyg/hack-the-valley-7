@@ -1,14 +1,10 @@
 <script lang="ts">
     import { info } from './info';
     import { storage } from './stores';
-
-    const style = [
-        `background: url('assets/info_${$storage.option}.png');`,
-        `background-size: cover;`
-    ].join('');
+    import Background from './Background.svelte';
 </script>
 
-<div {style} class="fixed"></div>
+<Background prefix="info_" ext="png"/>
 <section>
     {#each Object.entries(info) as [k, { content, src }], i}
         <div class="row" class:rtl={i%2}>

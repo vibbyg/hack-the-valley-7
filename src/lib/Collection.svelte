@@ -1,8 +1,6 @@
 <script lang="ts">
     import { storage } from './stores';
     import { blur } from "svelte/transition";
-    import { fly } from "svelte/transition";
-    import { quintOut } from "svelte/easing";
 
     $: style = `background: url(assets/card_${$storage.option}.svg) no-repeat;`;
     let selected = '';
@@ -12,7 +10,7 @@
     {#each Object.entries($storage.collection) as [ name, recipe ]}
     {#if !selected }
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div class="card" {style} transition:blur="{{delay: 300, duration: 1000}}" on:click={() => selected = name}>
+    <div class="card" {style} transition:blur|local="{{delay: 300, duration: 1000}}" on:click={() => selected = name}>
         <div class="header">
             <span class="name">{name}</span>
             <span class="cal">{recipe.calories} cal.</span>
@@ -27,7 +25,7 @@
     </div>
     {:else if selected === name }
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="large-card" {style} transition:blur="{{delay: 300, duration: 1000}}" on:click={() => selected = ''}>
+            <div class="large-card" {style} transition:blur|local="{{delay: 300, duration: 1000}}" on:click={() => selected = ''}>
                 <div class="large-header">
                     <span class="name">{name}</span>
                     <span class="cal">{recipe.calories} cal.</span>
