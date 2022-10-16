@@ -3,15 +3,11 @@
     export let isOpen = true;
 </script>
 
-<div id="blocker">
+<div id="blocker" on:click="{() => isOpen = false}">
     <div id="box">
         <div id="title">{title}</div>
         <div id="body">
             <slot></slot>
-        </div>
-        <div id="close" class="material-icons-round"
-             on:click="{() => isOpen = false}">
-            close
         </div>
     </div>
 </div>
@@ -35,7 +31,7 @@
         background-color: white;
         border-radius: 10px;
         position: absolute;
-        width: 20em;
+        width: 15em;
     }
 
     #title{
