@@ -4,19 +4,14 @@
 
     import Modal from './Modal.svelte';
 
-    const max = 100;
-    let tmp: string[] = [];
-    for (let i = 1; i <= max; i++) {
-        tmp.push(`${"banana".split("").map(v => ({v, s: Math.random()}))
-            .sort((a, b) => a.s - b.s).map(({v}) => v).join("")}`);
-    }
-    const banners = [...new Set(tmp)].map((x, i) => `${i + 1}. ${x}`);
+    import banners from './banners.json';
+
     let selected = 0;
     let x = 0;
 
     let infoOpen = false;
 
-    function change(num: number): void{
+    function change(num: number): void {
         x = 400 * num;
         selected = (selected + num + banners.length) % banners.length;
     }
@@ -52,21 +47,15 @@
             navigate_before
         </div>
         <div id="banners">
-            {#each banners as banner,i}
-                {#if i === 0}
+            {#each banners as banner, i}
                 {#if i === selected}
-                    <div class="sexy banner" in:flyIn|local out:flyOut|local
-                        on:click="{showInfo}"
-                    ></div>
-                {/if}
-                {:else}
-                {#if i === selected}
-                    <div class="banner" in:flyIn|local out:flyOut|local
-                        on:click="{showInfo}"
-                    >
-                        {banner}
-                    </div>
-                {/if}
+                <div class="banner" in:flyIn|local out:flyOut|local
+                    on:click="{showInfo}"
+                >
+                    <img src="assets/banners/{banner["img"]}"
+                        alt="{banner["name"]}"
+                    />
+                </div>
                 {/if}
             {/each}
         </div>
@@ -80,8 +69,8 @@
         <div on:click={() => alert('Summon x10')}>Summon x10</div>
     </div>
 </section>
-<Modal title="{banners[selected]}" bind:isOpen="{infoOpen}">
-    banana
+<Modal title="{banners[selected]["name"]}" bind:isOpen="{infoOpen}">
+    {banners[selected]["descript"]}
 </Modal>
 
 <style lang="sass">
@@ -103,13 +92,9 @@
         position: absolute
         left: calc(50% - 10em)
         top: calc(50% - 10em)
-        background-image: url("assets/dummy.png")
-        background-size: 100% 100%
-        background-repeat: no-repeat
         cursor: pointer
-    .sexy
-        background-image: url("assets/Limited_Event_banner.gif")
-        background-size: 100%
+    .banner > img
+        width: 100%
     #middle
         flex: 20
         display: flex
@@ -136,6 +121,7 @@
         align-items: center
         background: var(--theme)
         padding: 1em
+        z-index: 999
         & > div
             white-space: nowrap
             margin: 0 5em
