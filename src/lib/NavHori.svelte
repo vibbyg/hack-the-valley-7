@@ -31,7 +31,7 @@
         border-radius: 10px
         white-space: nowrap
     #title
-        text-align: center
+        color: white
         flex: 7
     #spacer
         flex: 2
