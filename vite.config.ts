@@ -6,8 +6,8 @@ const pwa = {
     filename: 'worker.js',
     manifestFilename: 'manifest.json',
     manifest: {
-        name: '{Todo}',
-        short_name: '{Todo}',
+        name: 'OnlyChefs',
+        short_name: 'OnlyChefs',
         icons: [{
             src: '192x192.png',
             sizes: '192x192',
