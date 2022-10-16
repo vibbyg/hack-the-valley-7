@@ -20,5 +20,9 @@ export const info = {
     ['Body Fat %']: {
         content: 'No number is a complete picture of your individual health. With that in mind, think of BMI and body fat percentage as just one way to assess and monitor your weight and overall body composition. Body fat percentage for men: Athletes: 14-20%, Fitness: 21-24%, Acceptable: 25-31%, Obesity: >32%. Body fat percentage for men: Athletes: 6-13%, Fitness: 14-17%, Acceptable: 18-24%, Obesity: >25%.',
         src: ''
+    },
+    ['Maintenance Calories']: {
+        content: 'Mantainance calories is the exact amount of calories need to maintain one\'s current weight, not lose weight and not gain weight. To calculate this figure, use the formulas: Basal Metabolic Rate: BMR (kcal/day) = 10 * weight (kg) + 6.25 * height (cm) – 5 * age (years) – 161. Total energy requirement: TDEE (kcal/day) = BMR * PAL, which is the amount of calories needed to maintain weight. 10-35% of energy should come from protein. 45-65% of energy should come from carbohydrates. 20-35% of energy should come from fat.',
+        src: ''
     }
 } as { [id: string]: Info };
