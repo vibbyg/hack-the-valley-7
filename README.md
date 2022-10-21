@@ -1,6 +1,10 @@
 # OnlyChefs
 
-https://devpost.com/software/only-chefs
+> Recipe recommendation app to encourage home cooking while maintain your health.
+
+Submission to [Hack The Vally 7](https://hackthevalley.io/) at https://devpost.com/software/only-chefs/
+
+Check out the website at https://vibbyg.github.io/htv7/ (also installable as a mobile/desktop application)
 
 ## Inspiration
 
