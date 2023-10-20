@@ -6,6 +6,8 @@ Submission to [Hack The Vally 7](https://hackthevalley.io/) at https://devpost.c
 
 Check out the website at https://vibbyg.github.io/htv7/ (also installable as a mobile/desktop application)
 
+Have fun cooking!
+
 ## Inspiration
 
 In our fast-paced, bustling world, cooking is nothing short of a tedious task. Most importantly, finding the motivation to cook a healthy, nutritious meal at home with McDonald's being around every corner has always been extremely difficult. That is, until now. Meet OnlyChefs.
